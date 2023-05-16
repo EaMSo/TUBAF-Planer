@@ -14,5 +14,5 @@ Automatisch Generierter Modul-Wochenplan für die Technische Universität Bergak
 - wenn die Software auf einem Computer funktioniert wäre es vorstellbar sie auch auf Android und IOS zu Porten (und eventuell auch auf eine Website)
 
 
-## Zusätzliche benutzte Pakete
+## Zusätzlich benutzte Pakete
 - [Microsoft.Data.Sqlite](https://www.nuget.org/packages/Microsoft.Data.Sqlite) (um SQLite als Datenbank nutzen zu können)
