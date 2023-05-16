@@ -9,7 +9,7 @@ Automatisch Generierter Modul-Wochenplan für die Technische Universität Bergak
 - Einträge in dem Wochenplan können individualisiert werden
 - Fertiger Wochenplan kann als PDF abgespeichert werden oder innerhalb des Programms... (oder in einer Kalenderfunktion angesehen werden) --optional
 ## Weiteres Vorgehen
-- wärend der Entwicklung des Programms werden auch noch weitere Features realisiert, wenn sie sich anbieten
+- wärend der Entwicklung des Programms werden auch noch weitere Features realisiert (wenn es sich anbietet)
 ## Porten?
 - wenn die Software auf einem Computer funktioniert wäre es vorstellbar sie auch auf Android und IOS zu Porten (und eventuell auch auf eine Website)
 
