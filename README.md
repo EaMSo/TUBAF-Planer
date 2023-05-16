@@ -15,4 +15,4 @@ Automatisch Generierter Modul-Wochenplan für die Technische Universität Bergak
 
 
 ## Zusätzliche benutzte Pakete
-- [Microsoft.Data.Sqlite](https://www.nuget.org/packages/Microsoft.Data.Sqlite)(um SQLite als Datenbank nutzen zu können)
+- [Microsoft.Data.Sqlite](https://www.nuget.org/packages/Microsoft.Data.Sqlite) (um SQLite als Datenbank nutzen zu können)
