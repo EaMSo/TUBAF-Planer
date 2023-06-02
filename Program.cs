@@ -1,28 +1,16 @@
-﻿using Microsoft.Data.Sqlite;
-using System.Collections.Generic;
-
+﻿using System;
 class Programm
 {
-    public static List<string> GetData()
+    public static void Main()
     {
-    var entries = new List<string>();
-    string dbpath = Path.Combine(ApplicationData.Current.LocalFolder.Path,
-                                 "TUBAF_Planner.db");
-    using (var db = new SqliteConnection($"Filename={dbpath}"))
-    {
-        db.Open();
-        var selectCommand = new SqliteCommand
-            ("SELECT Text_Entry from MyTable", db);
-
-        SqliteDataReader query = selectCommand.ExecuteReader();
-
-        while (query.Read())
+        var arry = SQLMETHODS.GetAllPflichtModPrimKey("2.Mm");
+        foreach(string m in arry)
         {
-            entries.Add(query.GetString(0));
+            System.Console.WriteLine(m);
         }
+        
     }
 
-    return entries;
-    }
 }
+
 
