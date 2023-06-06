@@ -3,7 +3,7 @@ class Programm
 {
     public static void Main()
     {
-        var arry = SQLMETHODS.GetAllPflichtModPrimKey("2.Mm");
+        var arry = SQLMETHODS.GetAllWahlpflichtCourses("2.Mm");
         foreach(string m in arry)
         {
             System.Console.WriteLine(m);
