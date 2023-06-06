@@ -2,7 +2,7 @@ using Microsoft.Data.Sqlite;
 using Microsoft.VisualBasic;
 namespace Modulmethods
 {
-    public class SQLMETHODS
+    public class SQLMethods
     {
         //Name of SQLite Fields for better use
         private const string FieldPrimär = "Primärschlüssel";
@@ -123,25 +123,29 @@ namespace Modulmethods
            return SQLTemplate_Select_Spicific_MultipleOutputs(Coursbezeichnung,FieldCourses,FieldPrimär);
         }
         //GetsDifferentvaluesfromPrimaryKeys
-        private static string GetTurnus(string PrimKey)
+        internal static string GetTurnus(string PrimKey)
         {
            return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldTurnus);
         }
-        private static string GetWeekday(string PrimKey)
+        internal static string GetWeekday(string PrimKey)
         {
            return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldWeekday);
         }
-        private static string GetRoom(string PrimKey)
+        internal static string GetRoom(string PrimKey)
         {
            return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldRoom);
         }
-        private static string GetStart(string PrimKey)
+        internal static string GetStart(string PrimKey)
         {
            return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldStart);
         }
-        private static string GetEnd(string PrimKey)
+        internal static string GetEnd(string PrimKey)
         {
            return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldEnd);
+        }
+        internal static string GetCourseName(string PrimKey)
+        {
+           return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldCourses);
         }
     }
 }
