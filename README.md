@@ -1,5 +1,5 @@
 # TUBAF-Planer
-Automatisch Generierter Modul-Wochenplan für die Technische Universität Bergakademie Freiberg
+Automatisch generierter Modul-Wochenplan für die Technische Universität Bergakademie Freiberg
 ## Generelle Funktionen der Wochenplananwendung
 - liest die benötigten Daten aus einer Datenbank aus
 - Generiert einen personalisierten Wochenplan für jeden Studenten basierend auf seinem Studienfach und Semester (welches er vorher angibt aber nicht muss (Preset))
