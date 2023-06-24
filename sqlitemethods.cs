@@ -7,8 +7,10 @@ namespace Modulmethods
         //Name of SQLite Fields for better use
         private const string FieldPrimär = "Primärschlüssel";
         private const string FieldCourses = "Lehrveranstaltung";
+        private const string FieldType = "Art";
         private const string FieldObligatory = "Pflicht";
         private const string FieldNotObligatory = "Wahlpflicht";
+        private const string FieldLecturer = "Dozenten";
         private const string FieldTurnus = "Turnus";
         private const string FieldWeekday = "Wochentag";
         private const string FieldRoom = "Raum";
@@ -39,6 +41,8 @@ namespace Modulmethods
         }
         private static string SQLTemplate_Select_Spicific_SingleOutput(string searchstring, string input_Table,string output_Table)
         {
+            try
+            {
             var path = Directory.GetCurrentDirectory();
             string primärschlüsselallemodule = "";
             int k = 0;
@@ -60,6 +64,11 @@ namespace Modulmethods
             throw new MyException("A Primäry Key is more then once in the Table!");;
             }
             return primärschlüsselallemodule;
+            }
+            catch(System.InvalidOperationException)
+            {
+            return null;
+            }
         }
         private static List<string> SQLTemplate_Select_Spicific_MultipleOutputs(string searchstring, string input_Table,string output_Table)
         {
@@ -69,7 +78,7 @@ namespace Modulmethods
             {
             connection.Open();
             var command = connection.CreateCommand();
-            command.CommandText = @"SELECT "+output_Table+" FROM Module WHERE "+ input_Table +" IS" +ControlChars.Quote+searchstring+ControlChars.Quote;
+            command.CommandText = @"SELECT "+ output_Table +" FROM Module WHERE "+ input_Table +" IS" +ControlChars.Quote+searchstring+ControlChars.Quote;
             using (var reader = command.ExecuteReader())
             {
                 while (reader.Read())
@@ -146,6 +155,14 @@ namespace Modulmethods
         internal static string GetCourseName(string PrimKey)
         {
            return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldCourses);
+        }
+        internal static string GetLecturerName(string PrimKey)
+        {
+           return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldLecturer);
+        }
+        internal static string GetType(string PrimKey)
+        {
+           return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldType);
         }
     }
 }
