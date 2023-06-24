@@ -41,11 +41,11 @@ namespace Modulmethods
         }
         private static string SQLTemplate_Select_Spicific_SingleOutput(string searchstring, string input_Table,string output_Table)
         {
-            try
-            {
             var path = Directory.GetCurrentDirectory();
             string primärschlüsselallemodule = "";
             int k = 0;
+            try
+            {
             using (var connection = new SqliteConnection("Data Source="+path+"/TUFreibergModule.db;Mode=ReadOnly"))
             {
             connection.Open();
