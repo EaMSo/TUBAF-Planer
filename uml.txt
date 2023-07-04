@@ -1,0 +1,48 @@
+@startuml
+class SQLMethods
+{
+    constructor()
+}
+
+class Module
+{
+    Constructor()
+}
+
+class ModuleList
+{
+    AddModule()
+    RemoveModule()
+    AddAllPflichtCourses()
+}
+
+class Planbuilder
+{
+    CheckOverlap()
+    AddModule()
+    RemoveModule()
+}
+
+class FullModuleList
+{
+   AddModule()
+    RemoveModule()
+    AddAllPflichtCourses() 
+}
+
+class CustomModule
+{
+    Create()
+}
+
+
+SQLMethods *-- Module : uses
+Module "many" *-- "1" ModuleList : contains
+ModuleList <|- FullModuleList
+Module "many" *-- "1" FullModuleList
+ModuleList *-- Planbuilder : uses
+FullModuleList *-- Planbuilder : uses
+CustomModule -|> Module
+CustomModule *-- ModuleList
+
+@enduml
