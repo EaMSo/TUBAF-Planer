@@ -61,7 +61,7 @@ namespace Modulmethods
             }
             if(k!=1)
             {
-            throw new MyException("A Primäry Key is more then once in the Table!");;
+            throw new InvalidDataException("A Primäry Key is more then once in the Table!");
             }
             return primärschlüsselallemodule;
             }
