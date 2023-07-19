@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wyw/sfFg2Kfdymx+ngwRbUwjjCKDZa/EGHDnQpvwWUfvpjPdKfJeRJkgWH1O32wT5hi8ZF/Sk2Dt88qEKfeSXg==",
+  "dgSpecHash": "5h8+Wzr6Snho2LMAJxanDWMMBrtMoObnWhcEfdyLifpFlj0DK8rw2fIzafXimNX/z+cJ1GEdRiKIp+yKPcloOw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Emil\\Desktop\\code\\TUBAF_Projekt\\TUBAFPlanerTest\\TUBAFPlanerTest.csproj",
+  "projectFilePath": "C:\\Users\\Emil\\Desktop\\code\\TUBAF-Planer\\TUBAFPlanerTest\\TUBAFPlanerTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Emil\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\Emil\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",
