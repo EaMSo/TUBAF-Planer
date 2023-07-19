@@ -338,11 +338,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Emil\\Desktop\\code\\TUBAF_Projekt\\TUBAFPlanerMAIN\\TUBAFPlaner.csproj",
+      "projectUniqueName": "C:\\Users\\Emil\\Desktop\\code\\TUBAF-Planer\\TUBAFPlanerMain\\TUBAFPlaner.csproj",
       "projectName": "TUBAFPlaner",
-      "projectPath": "C:\\Users\\Emil\\Desktop\\code\\TUBAF_Projekt\\TUBAFPlanerMAIN\\TUBAFPlaner.csproj",
+      "projectPath": "C:\\Users\\Emil\\Desktop\\code\\TUBAF-Planer\\TUBAFPlanerMain\\TUBAFPlaner.csproj",
       "packagesPath": "C:\\Users\\Emil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Emil\\Desktop\\code\\TUBAF_Projekt\\TUBAFPlanerMAIN\\obj\\",
+      "outputPath": "C:\\Users\\Emil\\Desktop\\code\\TUBAF-Planer\\TUBAFPlanerMain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Emil\\AppData\\Roaming\\NuGet\\NuGet.Config",

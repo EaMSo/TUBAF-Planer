@@ -38,6 +38,64 @@ namespace Modulmethods
         {
         return "Modulinfo: \nCoursname: " + coursename + "\nType: " + type + "\nLecturer: " + lecturer + "\nRoom: " + room + "\nTurnus: " + turnus + "\nWeekday: " + weekday + "\nStart: " + start + "\nEnd: " + end;
         }
+        //get funktion für alle Attribute
+        
+        public string Coursename
+        {
+            get
+            {
+                return coursename;
+            }
+        }
+        public string? Turnus
+        {
+            get
+            {
+                return turnus;
+            }
+        }
+        public string Type
+        {
+            get
+            {
+                return type;
+            }
+        }
+        public string Weekday
+        {
+            get
+            {
+                return weekday;
+            }
+        }
+        public string Lecturer
+        {
+            get
+            {
+                return lecturer;
+            }
+        }
+        public string? Room
+        {
+            get
+            {
+                return room;
+            }
+        }
+        public string? Start
+        {
+            get
+            {
+                return start;
+            }
+        }
+        public string? End
+        {
+            get
+            {
+                return end;
+            }
+        }
     }
 
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Emil\\Desktop\\code\\TUBAF_Projekt\\TUBAFPlanerMain\\TUBAFPlaner.csproj": {}
+    "C:\\Users\\Emil\\Desktop\\code\\TUBAF-Planer\\TUBAFPlanerMain\\TUBAFPlaner.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Emil\\Desktop\\code\\TUBAF_Projekt\\TUBAFPlanerMain\\TUBAFPlaner.csproj": {
+    "C:\\Users\\Emil\\Desktop\\code\\TUBAF-Planer\\TUBAFPlanerMain\\TUBAFPlaner.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Emil\\Desktop\\code\\TUBAF_Projekt\\TUBAFPlanerMain\\TUBAFPlaner.csproj",
+        "projectUniqueName": "C:\\Users\\Emil\\Desktop\\code\\TUBAF-Planer\\TUBAFPlanerMain\\TUBAFPlaner.csproj",
         "projectName": "TUBAFPlaner",
-        "projectPath": "C:\\Users\\Emil\\Desktop\\code\\TUBAF_Projekt\\TUBAFPlanerMain\\TUBAFPlaner.csproj",
+        "projectPath": "C:\\Users\\Emil\\Desktop\\code\\TUBAF-Planer\\TUBAFPlanerMain\\TUBAFPlaner.csproj",
         "packagesPath": "C:\\Users\\Emil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Emil\\Desktop\\code\\TUBAF_Projekt\\TUBAFPlanerMain\\obj\\",
+        "outputPath": "C:\\Users\\Emil\\Desktop\\code\\TUBAF-Planer\\TUBAFPlanerMain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Emil\\AppData\\Roaming\\NuGet\\NuGet.Config",
