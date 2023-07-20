@@ -23,4 +23,4 @@ Automatisch generierter Modul-Wochenplan für die Technische Universität Bergak
 ![UML Diagramm Entwurf](http://www.plantuml.com/plantuml/png/fP11IyGm48Nl-HMX9nLwy2eYknGyxUAglo0c8orE4ibC5iJrlnir8McHNhQtcNvvxytR4Al0qQBGg8Zay-Dk3pnwG-9JoFHfxuX3rEp3nQNu4fdRUnCHCZEiCRk9E7DRO_vsYVgPdy3w8vHLGRQ8XrUSzCY3Zu60Miq3AlSI9pGGYla8-ktX207LUnPPzwbYzn5n5lASZBBg3f7Ostb50HHdSr5BbbTzdtkIDp8c8P6dpYhtqVt-xwwxfil4QUzOJOv4ixqzzSjx_bTQGbKY4Ms_9L1zi4QrDyl-T9SJp_VbskmjDk1CjFWD)
 
 #Branch-Wechsel
-- Da das Layout des Projektes sich 2 mal gewechselt hat, da wir erst Test implementiert haben und dann das Project Zwecks UI in ein MAUI Projekt verändert haben, musste der default branch mehrmals gewechselt werden!
+- Da das Layout des Projektes sich 2 mal gewechselt hat, da wir erst Tests implementiert haben und dann das Project Zwecks UI in ein MAUI Projekt verändert haben, musste der default branch mehrmals gewechselt werden!
