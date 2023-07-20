@@ -11,3 +11,16 @@ D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.
 D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0\refint\TUBAF-Planer.dll
 D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0\TUBAF-Planer.pdb
 D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0\ref\TUBAF-Planer.dll
+D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\bin\Debug\net7.0\TUBAF-Planer.deps.json
+D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\bin\Debug\net7.0\TUBAF-Planer.dll
+D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\bin\Debug\net7.0\TUBAF-Planer.pdb
+D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0\TUBAF-Planer.csproj.AssemblyReference.cache
+D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0\TUBAF-Planer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0\TUBAF-Planer.AssemblyInfoInputs.cache
+D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0\TUBAF-Planer.AssemblyInfo.cs
+D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0\TUBAF-Planer.csproj.CoreCompileInputs.cache
+D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0\XamlC.stamp
+D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0\TUBAF-Planer.dll
+D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0\refint\TUBAF-Planer.dll
+D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0\TUBAF-Planer.pdb
+D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0\ref\TUBAF-Planer.dll
