@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TUBAF_Planer.PlanbuilderPage">
+    <AbsoluteLayout>
+        <Entry AbsoluteLayout.LayoutBounds="10, 0, 300, 50"
+               Placeholder="Studiengang">
+            
+        </Entry>
+        <Button Text="Module suchen"
+                AbsoluteLayout.LayoutBounds="320,0">
+            
+        </Button>
+        <StackLayout AbsoluteLayout.LayoutBounds="10, 60, 300, 1500">
+            <SearchBar Placeholder="Module">
+
+            </SearchBar>
+            <CollectionView HeightRequest="300"
+                            WidthRequest="300"
+                            BackgroundColor="#232323">
+                
+            </CollectionView>
+            <SearchBar Placeholder="eigene Module">
+
+            </SearchBar>
+            <CollectionView HeightRequest="300"
+                            WidthRequest="300"
+                            BackgroundColor="#232323">
+                
+            </CollectionView>
+        </StackLayout>
+        <HorizontalStackLayout AbsoluteLayout.LayoutBounds="320, 60, 500, 1500">
+            <VerticalStackLayout WidthRequest="200"
+                                 Padding="15">
+                <Label Text="Modulname:"
+                       HorizontalOptions="End"
+                       HeightRequest="45"/>
+                <Label Text="Raum:"
+                       HorizontalOptions="End"
+                       HeightRequest="45"/>
+                <Label Text="Wochnetag:"
+                       HorizontalOptions="End"
+                       HeightRequest="45"/>
+                <Label Text="Turnus:"
+                       HorizontalOptions="End"
+                       HeightRequest="45"/>
+                <Label Text="Startzeit:"
+                       HorizontalOptions="End"
+                       HeightRequest="45"/>
+                <Label Text="Endzeit:"
+                       HorizontalOptions="End"
+                       HeightRequest="45"/>
+                <Label Text="Dozenten:"
+                       HorizontalOptions="End"
+                       HeightRequest="45"/>
+
+            </VerticalStackLayout>
+            <VerticalStackLayout Padding="15">
+                <Entry Text="Softwareentwicklung"
+                       HeightRequest="45"/>
+                <Entry Text="AUD 1001"
+                       HeightRequest="45"/>
+                <Entry Text="Freitag"
+                       HeightRequest="45"/>
+                <Entry Text="wöchentlich"
+                       HeightRequest="45"/>
+                <Entry Text="9:45"
+                       HeightRequest="45"/>
+                <Entry Text="11:15"
+                       HeightRequest="45"/>
+                <Entry Text="Prof. Zug"
+                       HeightRequest="45"/>
+                
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+        <Button AbsoluteLayout.LayoutBounds="700, 210, 100, 50"
+                Text="Hinzufügen"
+                FontSize="10"   
+                BackgroundColor="AntiqueWhite">
+
+        </Button>
+        <Button AbsoluteLayout.LayoutBounds="700, 260, 100, 50"
+                Text="Entfernen"
+                FontSize="10"   
+                BackgroundColor="AntiqueWhite">
+
+        </Button>
+        <VerticalStackLayout AbsoluteLayout.LayoutBounds="830 ,70 , 300, 1500">
+            <Label Text="gewählte Module"/>
+            <CollectionView WidthRequest="300"
+                            HeightRequest="700"
+                            BackgroundColor="#232323">
+                
+            </CollectionView>
+
+
+        </VerticalStackLayout>
+        <Button Text="Plan generieren"
+                AbsoluteLayout.LayoutBounds="830, 800">
+            
+        </Button>
+
+
+    </AbsoluteLayout>
+    
+</ContentPage>

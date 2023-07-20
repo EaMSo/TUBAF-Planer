@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:Modulmethods"
+             
+             x:Class="TUBAF_Planer.MainPage">
+
+    <VerticalStackLayout>
+
+        <Grid ColumnDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*,*"
+              RowDefinitions="*, *"
+                HeightRequest="50"
+                WidthRequest="1800"
+                BackgroundColor="MidnightBlue">
+            <Label Text="Montag"
+                   HorizontalOptions="Center"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"/>
+            <Label Text="Dienstag"
+                   HorizontalOptions="Center"
+                    Grid.Column="2"
+                    Grid.ColumnSpan="2"/>
+            <Label Text="Mittwoch"
+                   HorizontalOptions="Center"
+                    Grid.Column="4"
+                    Grid.ColumnSpan="2"/>
+            <Label Text="Donnerstag"
+                   HorizontalOptions="Center"
+                    Grid.Column="6"
+                    Grid.ColumnSpan="2"/>
+            <Label Text="Freitag"
+                   HorizontalOptions="Center"
+                    Grid.Column="8"
+                    Grid.ColumnSpan="2"/>
+            <Label Text="Samstag"
+                   HorizontalOptions="Center"
+                    Grid.Column="10"
+                    Grid.ColumnSpan="2"/>
+            <Label Text="Sonntag"
+                   HorizontalOptions="Center"
+                    Grid.Column="12"
+                    Grid.ColumnSpan="2"/>
+            <Label Text="gerade Woche"
+                   HorizontalOptions="Center"
+                   Grid.Column="0"
+                   Grid.Row="2"/>
+            <Label Text="ungerade Woche"
+                   HorizontalOptions="Center"
+                   Grid.Column="1"
+                   Grid.Row="2"/>
+        </Grid>
+
+        <Grid ColumnDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*,*"
+                HeightRequest="800"
+                WidthRequest="1800"
+                BackgroundColor="#232323">
+            <CollectionView>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Modul">
+                        <Label Text="{Binding Coursename}"
+                               HorizontalOptions="Center"/>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+
+    </VerticalStackLayout>
+    
+
+</ContentPage>
