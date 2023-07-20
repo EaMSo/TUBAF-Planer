@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fmjIr7CGOJO8/vseycjeI2EUE3ufVl02zLDORoO+n4gIGTW8m2ZsrkspMCx8Q0CDwxpW9kP+spJ9LphyvWmqwg==",
+  "dgSpecHash": "/NkFwzaUYuTimPbDRfreHLmantX1FFX1Tr+OITCGvtxGTJYJVmrf6ktCKaVzURnDfK8CrRuZZ+aFqzHphB+AvA==",
   "success": true,
-  "projectFilePath": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer\\TUBAF-Planer\\TUBAF-Planer.csproj",
+  "projectFilePath": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer-Projekt\\TUBAF-Planer\\TUBAF-Planer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Janni\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.1\\communitytoolkit.mvvm.8.2.1.nupkg.sha512",
     "C:\\Users\\Janni\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",

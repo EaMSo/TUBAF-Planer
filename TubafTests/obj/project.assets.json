@@ -6005,11 +6005,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer\\TubafTests\\TubafTests.csproj",
+      "projectUniqueName": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer-Projekt\\TubafTests\\TubafTests.csproj",
       "projectName": "TubafTests",
-      "projectPath": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer\\TubafTests\\TubafTests.csproj",
+      "projectPath": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer-Projekt\\TubafTests\\TubafTests.csproj",
       "packagesPath": "C:\\Users\\Janni\\.nuget\\packages\\",
-      "outputPath": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer\\TubafTests\\obj\\",
+      "outputPath": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer-Projekt\\TubafTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6031,8 +6031,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer\\TUBAF-Planer\\TUBAF-Planer.csproj": {
-              "projectPath": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer\\TUBAF-Planer\\TUBAF-Planer.csproj"
+            "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer-Projekt\\TUBAF-Planer\\TUBAF-Planer.csproj": {
+              "projectPath": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer-Projekt\\TUBAF-Planer\\TUBAF-Planer.csproj"
             }
           }
         }

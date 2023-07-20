@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer\\TUBAF-Planer\\TUBAF-Planer.csproj": {}
+    "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer-Projekt\\TUBAF-Planer\\TUBAF-Planer.csproj": {}
   },
   "projects": {
-    "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer\\TUBAF-Planer\\TUBAF-Planer.csproj": {
+    "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer-Projekt\\TUBAF-Planer\\TUBAF-Planer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer\\TUBAF-Planer\\TUBAF-Planer.csproj",
+        "projectUniqueName": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer-Projekt\\TUBAF-Planer\\TUBAF-Planer.csproj",
         "projectName": "TUBAF-Planer",
-        "projectPath": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer\\TUBAF-Planer\\TUBAF-Planer.csproj",
+        "projectPath": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer-Projekt\\TUBAF-Planer\\TUBAF-Planer.csproj",
         "packagesPath": "C:\\Users\\Janni\\.nuget\\packages\\",
-        "outputPath": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer\\TUBAF-Planer\\obj\\",
+        "outputPath": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer-Projekt\\TUBAF-Planer\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
