@@ -1,1 +1,0 @@
-D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\TUBAF-Planer.csproj;x64
