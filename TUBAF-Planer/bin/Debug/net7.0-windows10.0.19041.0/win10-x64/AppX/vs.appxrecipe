@@ -10,14 +10,14 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>e9577724-bd4c-4c96-ad94-fb75457ee117</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
     <RegisteredManifestChecksum>5A3BECB9593C54EC258180FF5A66489BB0F4628B5584BF9C6EAC42EBDD5F849D</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e9577724-bd4c-4c96-ad94-fb75457ee117_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e9577724-bd4c-4c96-ad94-fb75457ee117_9zz4h110yvjzm!App</RegisteredUserModeAppID>
@@ -26,28 +26,28 @@
     <RegisteredVersion>1.0.0.1</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-07-20T18:20:51.192</Modified>
+      <Modified>2023-07-21T14:49:36.224</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-07-20T18:20:50.805</Modified>
+      <Modified>2023-07-21T13:08:28.619</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\TUBAF-Planer.runtimeconfig.json">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\TUBAF-Planer.runtimeconfig.json">
       <PackagePath>TUBAF-Planer.runtimeconfig.json</PackagePath>
-      <Modified>2023-07-20T18:20:50.549</Modified>
+      <Modified>2023-07-21T12:13:32.707</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\TUBAF-Planer.dll">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\TUBAF-Planer.dll">
       <PackagePath>TUBAF-Planer.dll</PackagePath>
-      <Modified>2023-07-20T18:20:49.098</Modified>
+      <Modified>2023-07-21T14:49:34.972</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>TUBAF-Planer.exe</PackagePath>
-      <Modified>2023-07-20T18:20:49.196</Modified>
+      <Modified>2023-07-21T14:49:35.033</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Janni\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.7\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -941,9 +941,9 @@
       <PackagePath>e_sqlite3.dll</PackagePath>
       <Modified>2023-01-10T20:13:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\TUBAF-Planer.deps.json">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\TUBAF-Planer.deps.json">
       <PackagePath>TUBAF-Planer.deps.json</PackagePath>
-      <Modified>2023-07-20T18:20:51.036</Modified>
+      <Modified>2023-07-21T14:49:36.107</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -957,261 +957,261 @@
       <PackagePath>Microsoft.Maui.pri</PackagePath>
       <Modified>2023-04-25T14:26:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2023-07-12T15:18:58.077</Modified>
+      <Modified>2023-07-21T08:49:52.018</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2023-07-12T15:19:35.909</Modified>
+      <Modified>2023-07-21T08:50:40.646</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2023-07-12T15:19:35.922</Modified>
+      <Modified>2023-07-21T08:50:40.668</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2023-07-12T15:19:35.939</Modified>
+      <Modified>2023-07-21T08:50:40.692</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2023-07-12T15:19:35.965</Modified>
+      <Modified>2023-07-21T08:50:40.723</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2023-07-12T15:19:36.065</Modified>
+      <Modified>2023-07-21T08:50:40.830</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2023-07-12T15:18:58.074</Modified>
+      <Modified>2023-07-21T08:49:52.017</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2023-07-12T15:18:58.075</Modified>
+      <Modified>2023-07-21T08:49:52.018</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-07-18T10:38:50.804</Modified>
+      <Modified>2023-07-21T08:50:40.875</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-07-18T10:38:51.012</Modified>
+      <Modified>2023-07-21T08:50:41.117</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-07-18T10:38:51.027</Modified>
+      <Modified>2023-07-21T08:50:41.128</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-07-18T10:38:51.057</Modified>
+      <Modified>2023-07-21T08:50:41.137</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-07-18T10:38:51.076</Modified>
+      <Modified>2023-07-21T08:50:41.153</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-07-18T10:38:51.141</Modified>
+      <Modified>2023-07-21T08:50:41.221</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.870</Modified>
+      <Modified>2023-07-21T08:50:40.945</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.873</Modified>
+      <Modified>2023-07-21T08:50:40.948</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.883</Modified>
+      <Modified>2023-07-21T08:50:40.976</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.875</Modified>
+      <Modified>2023-07-21T08:50:40.964</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.878</Modified>
+      <Modified>2023-07-21T08:50:40.968</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.853</Modified>
+      <Modified>2023-07-21T08:50:40.926</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.856</Modified>
+      <Modified>2023-07-21T08:50:40.929</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.868</Modified>
+      <Modified>2023-07-21T08:50:40.942</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.859</Modified>
+      <Modified>2023-07-21T08:50:40.932</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.862</Modified>
+      <Modified>2023-07-21T08:50:40.935</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.815</Modified>
+      <Modified>2023-07-21T08:50:40.883</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.818</Modified>
+      <Modified>2023-07-21T08:50:40.886</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.822</Modified>
+      <Modified>2023-07-21T08:50:40.892</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.825</Modified>
+      <Modified>2023-07-21T08:50:40.896</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.830</Modified>
+      <Modified>2023-07-21T08:50:40.901</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.833</Modified>
+      <Modified>2023-07-21T08:50:40.904</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.835</Modified>
+      <Modified>2023-07-21T08:50:40.907</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.850</Modified>
+      <Modified>2023-07-21T08:50:40.923</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.838</Modified>
+      <Modified>2023-07-21T08:50:40.910</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.841</Modified>
+      <Modified>2023-07-21T08:50:40.914</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.921</Modified>
+      <Modified>2023-07-21T08:50:41.016</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.925</Modified>
+      <Modified>2023-07-21T08:50:41.025</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.930</Modified>
+      <Modified>2023-07-21T08:50:41.030</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.937</Modified>
+      <Modified>2023-07-21T08:50:41.038</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.951</Modified>
+      <Modified>2023-07-21T08:50:41.052</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.902</Modified>
+      <Modified>2023-07-21T08:50:40.995</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.904</Modified>
+      <Modified>2023-07-21T08:50:40.998</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.907</Modified>
+      <Modified>2023-07-21T08:50:41.001</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.911</Modified>
+      <Modified>2023-07-21T08:50:41.005</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.917</Modified>
+      <Modified>2023-07-21T08:50:41.012</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.886</Modified>
+      <Modified>2023-07-21T08:50:40.978</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.889</Modified>
+      <Modified>2023-07-21T08:50:40.981</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.891</Modified>
+      <Modified>2023-07-21T08:50:40.984</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.894</Modified>
+      <Modified>2023-07-21T08:50:40.988</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.899</Modified>
+      <Modified>2023-07-21T08:50:40.992</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.956</Modified>
+      <Modified>2023-07-21T08:50:41.057</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.961</Modified>
+      <Modified>2023-07-21T08:50:41.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.968</Modified>
+      <Modified>2023-07-21T08:50:41.070</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.979</Modified>
+      <Modified>2023-07-21T08:50:41.082</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-07-18T10:38:51.004</Modified>
+      <Modified>2023-07-21T08:50:41.109</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.780</Modified>
+      <Modified>2023-07-21T08:50:40.915</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.796</Modified>
+      <Modified>2023-07-21T08:50:40.926</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.807</Modified>
+      <Modified>2023-07-21T08:50:40.940</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.824</Modified>
+      <Modified>2023-07-21T08:50:40.959</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.868</Modified>
+      <Modified>2023-07-21T08:50:41.009</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\next_arrow.scale-100.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\next_arrow.scale-100.png">
       <PackagePath>next_arrow.scale-100.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.800</Modified>
+      <Modified>2023-07-21T08:50:40.899</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\next_arrow.scale-125.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\next_arrow.scale-125.png">
       <PackagePath>next_arrow.scale-125.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.854</Modified>
+      <Modified>2023-07-21T08:50:40.953</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\next_arrow.scale-150.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\next_arrow.scale-150.png">
       <PackagePath>next_arrow.scale-150.png</PackagePath>
-      <Modified>2023-07-18T10:38:50.912</Modified>
+      <Modified>2023-07-21T08:50:41.024</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\next_arrow.scale-200.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\next_arrow.scale-200.png">
       <PackagePath>next_arrow.scale-200.png</PackagePath>
-      <Modified>2023-07-18T10:38:51.012</Modified>
+      <Modified>2023-07-21T08:50:41.130</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer-Projekt\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\next_arrow.scale-400.png">
+    <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\next_arrow.scale-400.png">
       <PackagePath>next_arrow.scale-400.png</PackagePath>
-      <Modified>2023-07-18T10:38:51.448</Modified>
+      <Modified>2023-07-21T08:50:41.546</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

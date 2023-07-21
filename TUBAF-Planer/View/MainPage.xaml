@@ -2,8 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:model="clr-namespace:Modulmethods"
-             
-             x:Class="TUBAF_Planer.MainPage">
+             xmlns:viewmodel="clr-namespace:TUBAFPlaner.ViewModel"
+             x:DataType="viewmodel:PlanViewModel"             
+             x:Class="TUBAF_Planer.MainPage"
+             Style="{StaticResource BackColor}">
 
     <VerticalStackLayout>
 
@@ -11,7 +13,7 @@
               RowDefinitions="*, *"
                 HeightRequest="50"
                 WidthRequest="1800"
-                BackgroundColor="MidnightBlue">
+                Style="{StaticResource StackBackColor}">
             <Label Text="Montag"
                    HorizontalOptions="Center"
                     Grid.Column="0"
@@ -54,17 +56,34 @@
                 HeightRequest="800"
                 WidthRequest="1800"
                 BackgroundColor="#232323">
-            <CollectionView>
+            <CollectionView ItemsSource="{Binding Modules}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Modul">
-                        <Label Text="{Binding Coursename}"
-                               HorizontalOptions="Center"/>
+                        <Frame Padding="2"
+                               BorderColor="DarkRed">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer CommandParameter="{Binding .}"
+                                                      Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PlanViewModel}}, Path=GoToPlanDetailsCommand}"/>
+                            </Frame.GestureRecognizers>
+                            <VerticalStackLayout>
+                                <Label Text="{Binding Coursename}"
+                                       HorizontalOptions="Start"
+                                       Style="{StaticResource SmallLabel}"/>
+                                <Label Text="{Binding Room}"
+                                       HorizontalOptions="Start"
+                                       Style="{StaticResource SmallLabel}"/>
+                            </VerticalStackLayout>
+                        </Frame>
 
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </Grid>
-
+        <Button Text="ListTest"
+                Command="{Binding GetModuleListCommand}"
+                IsEnabled="{Binding IsNotBusy}">
+            
+        </Button>
     </VerticalStackLayout>
     
 

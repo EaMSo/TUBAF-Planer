@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Bbm+wRZ+1RK9Nylgx/42MUBnmx+6nvdL5HRY66Ni2/WlgJpCUbYvaQYeSXKTrezqVOfruvoJZQ8I+Cv7aFYSxw==",
+  "dgSpecHash": "7Xe0ZtPEJSfKHoewi9pVBBFVBG58M0lR0yQ/yrpu2KL74jhEQqhjF4/YAKLCXfhilX5HPdzIssqe2wqRvyAawQ==",
   "success": true,
-  "projectFilePath": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer-Projekt\\TubafTests\\TubafTests.csproj",
+  "projectFilePath": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer\\TubafTests\\TubafTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Janni\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.1\\communitytoolkit.mvvm.8.2.1.nupkg.sha512",
     "C:\\Users\\Janni\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",

@@ -5,6 +5,43 @@
              x:Class="TUBAF_Planer.App">
     <Application.Resources>
         <ResourceDictionary>
+            <Color x:Key="LabelText">#101010</Color>
+            <Color x:Key="LabelTextDark">White</Color>
+            
+            <Color x:Key="ListBackColor">#858585</Color>
+            <Color x:Key="ListBackColorDark">#232323</Color>
+
+            <Color x:Key="BackColorPrimary">#0993BD</Color>
+            <Color x:Key="BackColorPrimaryDark">MidnightBlue</Color>
+
+            <Color x:Key="BackColorSecondary">#DDDDDD</Color>
+            <Color x:Key="BackColorSecondaryDark">#181818</Color>
+
+            <Style x:Key="StackBackColor" TargetType="VerticalStackLayout">
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource BackColorPrimary}, Dark={StaticResource BackColorPrimaryDark}}"/>
+            </Style>
+
+            <Style x:Key="BackColor" TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource BackColorSecondary}, Dark={StaticResource BackColorSecondaryDark}}"/>
+            </Style>
+
+            <Style x:Key="ShellBackColor" TargetType="Shell">
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource BackColorSecondary}, Dark={StaticResource BackColorSecondaryDark}}"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="BaseLabel">
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LabelText}, Dark={StaticResource LabelTextDark}}"/>
+            </Style>
+
+            <Style x:Key="SmallLabel" 
+                   BasedOn="{StaticResource BaseLabel}"
+                   TargetType="Label">
+                <Setter Property="FontSize" Value="12"/>
+            </Style>
+    
+
+            
+            
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />

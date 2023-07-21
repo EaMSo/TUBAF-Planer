@@ -6,7 +6,7 @@
     xmlns:local="clr-namespace:TUBAF_Planer"
     Shell.FlyoutBehavior="Disabled">
 
-    <TabBar>
+    <TabBar Style="{StaticResource ShellBackColor}">
 
 
         <ShellContent
