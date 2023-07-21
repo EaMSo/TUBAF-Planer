@@ -25,7 +25,7 @@ namespace Modulmethods
         //Methods for Connecting to the Database and doing a SQL search
         private static List<string> SQLTemplate_Select_LIKE(string Table, string Modulname)
         {
-            var path = GetDBPath();
+            var path = DBWriting.GetDBPath();
             var primärschlüsselallemodule = new List<string> {};
             using (var connection = new SqliteConnection("Data Source="+path+";Mode=ReadOnly"))
             {
@@ -44,15 +44,9 @@ namespace Modulmethods
             }
             return primärschlüsselallemodule;
         }
-        public static string GetDBPath()
-        {
-            string filename = "TUFreibergModule.db";
-            var path = AppDomain.CurrentDomain.BaseDirectory + filename;
-            return path;
-        }
         private static string SQLTemplate_Select_Spicific_SingleOutput(string searchstring, string input_Table,string output_Table)
         {
-            var path = GetDBPath();
+            var path = DBWriting.GetDBPath();
             string primärschlüsselallemodule = "";
             int k = 0;
             try

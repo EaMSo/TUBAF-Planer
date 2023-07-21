@@ -5999,23 +5999,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Janni\\.nuget\\packages\\": {},
+    "C:\\Users\\Emil\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer-Projekt\\TubafTests\\TubafTests.csproj",
+      "projectUniqueName": "C:\\Users\\Emil\\Desktop\\code\\TUBAF-Planer\\TubafTests\\TubafTests.csproj",
       "projectName": "TubafTests",
-      "projectPath": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer-Projekt\\TubafTests\\TubafTests.csproj",
-      "packagesPath": "C:\\Users\\Janni\\.nuget\\packages\\",
-      "outputPath": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer-Projekt\\TubafTests\\obj\\",
+      "projectPath": "C:\\Users\\Emil\\Desktop\\code\\TUBAF-Planer\\TubafTests\\TubafTests.csproj",
+      "packagesPath": "C:\\Users\\Emil\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Emil\\Desktop\\code\\TUBAF-Planer\\TubafTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Janni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Emil\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6031,8 +6031,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer-Projekt\\TUBAF-Planer\\TUBAF-Planer.csproj": {
-              "projectPath": "D:\\Program Data\\Visual Studio Projects\\TUBAF-Planer-Projekt\\TUBAF-Planer\\TUBAF-Planer.csproj"
+            "C:\\Users\\Emil\\Desktop\\code\\TUBAF-Planer\\TUBAF-Planer\\TUBAF-Planer.csproj": {
+              "projectPath": "C:\\Users\\Emil\\Desktop\\code\\TUBAF-Planer\\TUBAF-Planer\\TUBAF-Planer.csproj"
             }
           }
         }
@@ -6084,7 +6084,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }
