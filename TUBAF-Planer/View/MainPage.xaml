@@ -5,6 +5,7 @@
              xmlns:viewmodel="clr-namespace:TUBAFPlaner.ViewModel"
              x:DataType="viewmodel:PlanViewModel"             
              x:Class="TUBAF_Planer.MainPage"
+             xmlns:cmp="clr-namespace:Microsoft.Maui.Controls.Compatibility;assembly=Microsoft.Maui.Controls"
              Style="{StaticResource BackColor}">
 
     <VerticalStackLayout>
@@ -52,36 +53,50 @@
                    Grid.Row="2"/>
         </Grid>
 
-        <Grid ColumnDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*,*"
-                HeightRequest="800"
-                WidthRequest="1800"
-                BackgroundColor="#232323">
-            <CollectionView ItemsSource="{Binding Modules}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="model:Modul">
-                        <Frame Padding="2"
-                               BorderColor="DarkRed">
-                            <Frame.GestureRecognizers>
-                                <TapGestureRecognizer CommandParameter="{Binding .}"
-                                                      Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PlanViewModel}}, Path=GoToPlanDetailsCommand}"/>
-                            </Frame.GestureRecognizers>
-                            <VerticalStackLayout>
-                                <Label Text="{Binding Coursename}"
-                                       HorizontalOptions="Start"
-                                       Style="{StaticResource SmallLabel}"/>
-                                <Label Text="{Binding Room}"
-                                       HorizontalOptions="Start"
-                                       Style="{StaticResource SmallLabel}"/>
-                            </VerticalStackLayout>
-                        </Frame>
 
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </Grid>
+        <CollectionView ItemsSource="{Binding Modules}"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="14"
+                        HeightRequest="800">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Modul">
+                    <!-- not finished-->
+                    <cmp:RelativeLayout WidthRequest="1800">
+                        <Grid ColumnDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*,*"
+                            HeightRequest="800"
+                            WidthRequest="1800"
+                            Style="{StaticResource ListBack}">
+                            <Frame Padding="2"
+                                Grid.Column="2"
+                                Grid.ColumnSpan="2"
+                                HeightRequest="{Binding Size}"
+                                cmp:RelativeLayout.YConstraint="{Binding Offset}"
+                                BorderColor="{AppThemeBinding Light={StaticResource LabelTextDark}, Dark={StaticResource LabelText}}"
+                                BackgroundColor="{AppThemeBinding Light={StaticResource BackColorPrimary}, Dark={StaticResource BackColorPrimaryDark}}">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer CommandParameter="{Binding .}"
+                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PlanViewModel}}, Path=GoToPlanDetailsCommand}"/>
+                                </Frame.GestureRecognizers>
+                                <VerticalStackLayout>
+                                    <Label Text="{Binding Coursename}"
+                                            HorizontalOptions="Start"
+                                            Style="{StaticResource SmallLabel}"
+                                            HeightRequest="20"/>
+                                    <Label Text="{Binding Room}"
+                                            HorizontalOptions="Start"
+                                            Style="{StaticResource SmallLabel}"/>
+                                </VerticalStackLayout>
+                            </Frame>
+                        </Grid>
+                    </cmp:RelativeLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
         <Button Text="ListTest"
                 Command="{Binding GetModuleListCommand}"
-                IsEnabled="{Binding IsNotBusy}">
+                IsEnabled="{Binding IsNotBusy}"
+                Style="{StaticResource ButtonS}">
             
         </Button>
     </VerticalStackLayout>

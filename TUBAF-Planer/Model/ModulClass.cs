@@ -12,6 +12,10 @@ namespace Modulmethods
         private string? room;
         private string? start;
         private string? end;
+
+        //für die Anzeige
+        private string offset;
+        private string size;
         public Modul(string Primkey)
         {
             //if(SQLMethods.GetRoom(Primkey) != null)
@@ -31,6 +35,9 @@ namespace Modulmethods
             this.room = SQLMethods.GetRoom(Primkey);
             this.start = SQLMethods.GetStart(Primkey);
             this.end = SQLMethods.GetEnd(Primkey);
+
+            this.offset = "0";
+            this.size = "40";
 
             
         }
@@ -95,6 +102,14 @@ namespace Modulmethods
             {
                 return end;
             }
+        }
+        public string Offset
+        {
+            get => offset;
+        }
+        public string Size
+        {
+            get => size;
         }
     }
 

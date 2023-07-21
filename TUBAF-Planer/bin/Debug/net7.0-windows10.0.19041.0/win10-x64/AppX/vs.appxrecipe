@@ -29,13 +29,13 @@
     <AppXManifest Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-07-21T14:49:36.224</Modified>
+      <Modified>2023-07-21T17:07:33.420</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-07-21T13:08:28.619</Modified>
+      <Modified>2023-07-21T16:21:45.484</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\TUBAF-Planer.runtimeconfig.json">
       <PackagePath>TUBAF-Planer.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\TUBAF-Planer.dll">
       <PackagePath>TUBAF-Planer.dll</PackagePath>
-      <Modified>2023-07-21T14:49:34.972</Modified>
+      <Modified>2023-07-21T17:07:32.170</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>TUBAF-Planer.exe</PackagePath>
-      <Modified>2023-07-21T14:49:35.033</Modified>
+      <Modified>2023-07-21T17:07:32.237</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Janni\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.7\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -943,7 +943,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Program Data\Visual Studio Projects\TUBAF-Planer\TUBAF-Planer\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\TUBAF-Planer.deps.json">
       <PackagePath>TUBAF-Planer.deps.json</PackagePath>
-      <Modified>2023-07-21T14:49:36.107</Modified>
+      <Modified>2023-07-21T17:07:33.300</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

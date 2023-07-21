@@ -11,6 +11,8 @@
         <Label 
             Text="{Binding Modul.Type}"/>
         <Label 
+            Text="{Binding Modul.Weekday}"/>
+        <Label 
             Text="{Binding Modul.Start}"/>
         <Label 
             Text="{Binding Modul.End}"/>

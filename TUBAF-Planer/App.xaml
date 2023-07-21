@@ -8,7 +8,7 @@
             <Color x:Key="LabelText">#101010</Color>
             <Color x:Key="LabelTextDark">White</Color>
             
-            <Color x:Key="ListBackColor">#858585</Color>
+            <Color x:Key="ListBackColor">#A5A5A5</Color>
             <Color x:Key="ListBackColorDark">#232323</Color>
 
             <Color x:Key="BackColorPrimary">#0993BD</Color>
@@ -37,6 +37,15 @@
                    BasedOn="{StaticResource BaseLabel}"
                    TargetType="Label">
                 <Setter Property="FontSize" Value="12"/>
+            </Style>
+
+            <Style x:Key="ListBack" TargetType="CollectionView">
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource ListBackColor}, Dark={StaticResource ListBackColorDark}}"/>
+            </Style>
+
+            <Style x:Key="ButtonS" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource BackColorPrimary}, Dark={StaticResource BackColorPrimaryDark}}"/>
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LabelText}, Dark={StaticResource LabelTextDark}}"/>
             </Style>
     
 

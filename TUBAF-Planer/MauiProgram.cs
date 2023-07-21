@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using Microsoft.Maui.Controls.Compatibility.Hosting;
 using TUBAF_Planer.View;
 using TUBAFPlaner.ViewModel;
 
@@ -24,6 +25,7 @@ public static class MauiProgram
 		builder.Services.AddSingleton<PlanViewModel>();
 		builder.Services.AddTransient<ModulDetailViewModel>();
 		builder.Services.AddTransient<ModulDetailPage>();	
+		builder.UseMauiCompatibility();
 
 		return builder.Build();
 	}
