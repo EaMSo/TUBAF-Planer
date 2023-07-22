@@ -1,9 +1,14 @@
 using Microsoft.Data.Sqlite;
 using Microsoft.VisualBasic;
+
+
 namespace Modulmethods
 {
     public class Modul 
     {
+        public const uint EarliestStartTime = 450; // entspricht 7:30
+        public const uint LatestEndTime = 1170; // 19:30
+        public const uint TableHeight = 800; // Höhe der Plantabelle
         private string coursename;
         private string? turnus;
         private string type;
@@ -36,7 +41,7 @@ namespace Modulmethods
         }
         public override string ToString()
         {
-        return "Modulinfo: \nCoursname: " + coursename + "\nType: " + type + "\nLecturer: " + lecturer + "\nRoom: " + room + "\nTurnus: " + turnus + "\nWeekday: " + weekday + "\nStart: " + start + "\nEnd: " + end;
+        return "Modulinfo: \nCoursname: " + coursename + "\nType: " + type + "\nLecturer: " + lecturer + "\nRoom: " + room + "\nTurnus: " + turnus + "\nWeekday: " + weekday + "\nStart: " + start + "\nEnd: " + end +"\nRowStart" + TimeRowStart;
         }
         //get funktion für alle Attribute
         
@@ -103,7 +108,7 @@ namespace Modulmethods
                 return "60";
             }
         }
-        public string DayColumn
+        public string DayColumn //Modul in die richtige SPalte einordnen
         {
             get
             {
@@ -160,8 +165,21 @@ namespace Modulmethods
         {
             get
             {
-                Random rand = new();
-                return Convert.ToString( rand.Next(700));
+                uint TimeDiff = LatestEndTime - EarliestStartTime;
+                if(this.Start == null)
+                {
+                    return "100";
+                }
+                string[] Time = this.Start.Split(':');
+                uint StartTime = Convert.ToUInt32(Time[0]) * 60 + Convert.ToUInt32(Time[1]);
+                if(StartTime < EarliestStartTime || StartTime > LatestEndTime  )
+                {
+                    throw new Exception("Zeit außerhalb der zugelassenen Grenzen");
+                }
+                StartTime = StartTime - EarliestStartTime;
+                return Convert.ToString(Math.Round(StartTime * ((double)TableHeight / TimeDiff),
+                                           MidpointRounding.ToEven));
+                
             }
         }
     }
