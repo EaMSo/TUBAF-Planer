@@ -32,7 +32,14 @@ public partial class PlanViewModel : BaseViewModel
 
             var modules = new List<Modulmethods.Modul>()
             {
-                new Modulmethods.Modul("#SPLUSCB0264")
+                new Modulmethods.Modul("#SPLUS3DE77D"),
+                new Modulmethods.Modul("#SPLUS7D7D5F"),
+                new Modulmethods.Modul("#SPLUS85CD1B"),
+                new Modulmethods.Modul("#SPLUSC8FF38"),
+                new Modulmethods.Modul("666"),
+                new Modulmethods.Modul("#SPLUS72DD09")
+
+
             };
 
             foreach (var mod in modules)

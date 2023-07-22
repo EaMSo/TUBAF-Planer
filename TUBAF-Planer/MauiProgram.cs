@@ -22,7 +22,7 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 		builder.Services.AddSingleton<MainPage>();
-		builder.Services.AddSingleton<PlanViewModel>();
+		builder.Services.AddTransient<PlanViewModel>();
 		builder.Services.AddTransient<ModulDetailViewModel>();
 		builder.Services.AddTransient<ModulDetailPage>();	
 		builder.UseMauiCompatibility();
