@@ -14,7 +14,8 @@ public partial class MainPage : ContentPage
 	public MainPage(PlanViewModel viewModel)
 	{
 		InitializeComponent();
-    BindingContext = viewModel;
+		BindingContext = viewModel;
+		CustomModule.CreateTable();
 		List<Modul> fullmodulelist = FullmoduleList.GetFullmoduleList();
 		string modulstring = "";
 		foreach(Modul modul in fullmodulelist)
