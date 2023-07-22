@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TUBAF_Planer.View.ModulDetailPage"
+             xmlns:viewmodel="clr-namespace:TUBAFPlaner.ViewModel"
+             x:DataType="viewmodel:ModulDetailViewModel"
+             Title="{Binding Modul.Coursename}">
+    <VerticalStackLayout>
+        <Label 
+            Text="{Binding Modul.Coursename}"/>
+        <Label 
+            Text="{Binding Modul.Type}"/>
+        <Label 
+            Text="{Binding Modul.Weekday}"/>
+        <Label 
+            Text="{Binding Modul.Start}"/>
+        <Label 
+            Text="{Binding Modul.End}"/>
+        <Label 
+            Text="{Binding Modul.Turnus}"/>
+        <Label 
+            Text="{Binding Modul.Room}"/>
+        <Label 
+            Text="{Binding Modul.Lecturer}"/>
+        
+        
+        
+    </VerticalStackLayout>
+</ContentPage>

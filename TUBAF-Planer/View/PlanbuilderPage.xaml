@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TUBAF_Planer.PlanbuilderPage">
+             x:Class="TUBAF_Planer.PlanbuilderPage"
+             Style="{StaticResource BackColor}">
     <AbsoluteLayout>
         <Entry AbsoluteLayout.LayoutBounds="10, 0, 300, 50"
                Placeholder="Studiengang">
             
         </Entry>
         <Button Text="Module suchen"
-                AbsoluteLayout.LayoutBounds="320,0">
+                AbsoluteLayout.LayoutBounds="320,0"
+                Style="{StaticResource ButtonS}">
             
         </Button>
         <StackLayout AbsoluteLayout.LayoutBounds="10, 60, 300, 1500">
@@ -17,7 +19,7 @@
             </SearchBar>
             <CollectionView HeightRequest="300"
                             WidthRequest="300"
-                            BackgroundColor="#232323">
+                            Style="{StaticResource ListBack}">
                 
             </CollectionView>
             <SearchBar Placeholder="eigene Module">
@@ -25,7 +27,7 @@
             </SearchBar>
             <CollectionView HeightRequest="300"
                             WidthRequest="300"
-                            BackgroundColor="#232323">
+                            Style="{StaticResource ListBack}">
                 
             </CollectionView>
         </StackLayout>
@@ -76,27 +78,28 @@
         <Button AbsoluteLayout.LayoutBounds="700, 210, 100, 50"
                 Text="Hinzufügen"
                 FontSize="10"   
-                BackgroundColor="AntiqueWhite">
+                Style="{StaticResource ButtonS}">
 
         </Button>
         <Button AbsoluteLayout.LayoutBounds="700, 260, 100, 50"
                 Text="Entfernen"
                 FontSize="10"   
-                BackgroundColor="AntiqueWhite">
+                Style="{StaticResource ButtonS}">
 
         </Button>
         <VerticalStackLayout AbsoluteLayout.LayoutBounds="830 ,70 , 300, 1500">
             <Label Text="gewählte Module"/>
             <CollectionView WidthRequest="300"
                             HeightRequest="700"
-                            BackgroundColor="#232323">
+                            Style="{StaticResource ListBack}">
                 
             </CollectionView>
 
 
         </VerticalStackLayout>
         <Button Text="Plan generieren"
-                AbsoluteLayout.LayoutBounds="830, 800">
+                AbsoluteLayout.LayoutBounds="830, 800"
+                Style="{StaticResource ButtonS}">
             
         </Button>
 
