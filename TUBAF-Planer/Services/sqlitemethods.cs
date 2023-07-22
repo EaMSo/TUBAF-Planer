@@ -97,7 +97,7 @@ namespace Modulmethods
             return selection;
         }
 
-        public static List<string> GetPrimaryKeyList()
+        public static List<string> GetPrimaryKeyList(string Tablename)//CustomModule oder Module
         {
             var path = DBWriting.GetDBPath();
             var primärschlüsselallemodule = new List<string> { };
@@ -105,7 +105,7 @@ namespace Modulmethods
             {
                 connection.Open();
                 var command = connection.CreateCommand();
-                command.CommandText = @"SELECT * FROM Module";
+                command.CommandText = @"SELECT * FROM "+Tablename;
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())

@@ -8,7 +8,7 @@ namespace Modulmethods
 {
     public class DBWriting
     {
-        //Copy the database from the app package to the local folder.
+        //If it doesn't exist copy the database from the app package to the local folder for the user
         public static string GetDBPath()
         {
 
