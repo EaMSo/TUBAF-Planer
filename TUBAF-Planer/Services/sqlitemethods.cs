@@ -77,9 +77,9 @@ namespace Modulmethods
         }
         private static List<string> SQLTemplate_Select_Spicific_MultipleOutputs(string searchstring, string input_Table,string output_Table)
         {
+            string path = DBWriting.GetDBPath();
             var selection = new List<string> {};
-            var path = Directory.GetCurrentDirectory();
-            using (var connection = new SqliteConnection("Data Source="+path+"/TUFreibergModule.db;Mode=ReadOnly"))
+            using (var connection = new SqliteConnection("Data Source="+path+";Mode=ReadOnly"))
             {
             connection.Open();
             var command = connection.CreateCommand();
@@ -96,6 +96,29 @@ namespace Modulmethods
             }
             return selection;
         }
+
+        public static List<string> GetPrimaryKeyList()
+        {
+            var path = DBWriting.GetDBPath();
+            var primärschlüsselallemodule = new List<string> { };
+            using (var connection = new SqliteConnection("Data Source=" + path + ";Mode=ReadOnly"))
+            {
+                connection.Open();
+                var command = connection.CreateCommand();
+                command.CommandText = @"SELECT * FROM Module";
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var Key = reader.GetString(0);
+                        primärschlüsselallemodule.Add(Key);
+                    }
+
+                }
+            }
+            return primärschlüsselallemodule;
+        }
+
         /*Returns a list of all Primary Keys for the Pflicht Modules of a string which is 
         Combined of the Semester and the short form of the course Example: 2.BAI for second Semester Bachlor of Applied Informatics*/
         private static List<string> GetAllPflichtModPrimKey(string Modulname)
