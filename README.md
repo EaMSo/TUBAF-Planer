@@ -16,6 +16,7 @@ Automatisch generierter Modul-Wochenplan für die Technische Universität Bergak
 
 ## Zusätzlich benutzte Pakete
 - [Microsoft.Data.Sqlite](https://www.nuget.org/packages/Microsoft.Data.Sqlite) (um SQLite als Datenbank nutzen zu können)
+- [Community Toolkit MVVM](https://www.nuget.org/packages/CommunityToolkit.Mvvm) (leichtere Benutzbarkeit von MAUI)
 
 
 
