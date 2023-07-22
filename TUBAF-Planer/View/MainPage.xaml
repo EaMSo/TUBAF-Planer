@@ -97,7 +97,7 @@
         <Button Text="ListTest"
                 Command="{Binding GetModuleListCommand}"
                 IsEnabled="{Binding IsNotBusy}"
-                Style="{StaticResource ButtonS}">
+                Style="{StaticResource ButtonS}"/>
 
                     
         <Button Text="Add"
