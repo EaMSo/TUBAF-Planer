@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TUBAF-Planer", "TUBAF-Planer\TUBAF-Planer.csproj", "{2CC21F09-A464-47F1-935F-A297FB558761}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TubafTests", "TubafTests\TubafTests.csproj", "{1868E0D6-A2AD-4594-ACD5-E7D22D311515}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TubafTests", "TubafTests\TubafTests.csproj", "{1868E0D6-A2AD-4594-ACD5-E7D22D311515}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
