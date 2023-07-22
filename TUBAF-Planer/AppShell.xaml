@@ -4,19 +4,19 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:TUBAF_Planer"
-    Shell.FlyoutBehavior="Disabled">
+    Shell.FlyoutBehavior="Disabled"
+    Style="{StaticResource ShellBackColor}">
 
     <TabBar>
 
-
         <ShellContent
-            Title="Wochenplan"
-            ContentTemplate="{DataTemplate local:MainPage}"
-            Route="MainPage" />
+                Title="Wochenplan"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage" />
         <ShellContent
-            Title="Plan bauen"
-            ContentTemplate="{DataTemplate local:PlanbuilderPage}" 
-            Route="PlanbuilderPage"/>
+                Title="Plan bauen"
+                ContentTemplate="{DataTemplate local:PlanbuilderPage}" 
+                Route="PlanbuilderPage"/>
 
     </TabBar>
 
