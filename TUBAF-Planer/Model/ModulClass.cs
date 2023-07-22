@@ -100,7 +100,7 @@ namespace Modulmethods
         {
             get
             {
-
+                return "60";
             }
         }
         public string DayColumn
