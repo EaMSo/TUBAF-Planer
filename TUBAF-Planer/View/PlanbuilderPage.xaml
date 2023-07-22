@@ -40,7 +40,7 @@
                 <Label Text="Raum:"
                        HorizontalOptions="End"
                        HeightRequest="45"/>
-                <Label Text="Wochnetag:"
+                <Label Text="Wochentag:"
                        HorizontalOptions="End"
                        HeightRequest="45"/>
                 <Label Text="Turnus:"
@@ -59,19 +59,26 @@
             </VerticalStackLayout>
             <VerticalStackLayout Padding="15">
                 <Entry Text="Softwareentwicklung"
-                       HeightRequest="45"/>
+                       HeightRequest="45"
+                       x:Name="Coursename"/>
                 <Entry Text="AUD 1001"
-                       HeightRequest="45"/>
+                       HeightRequest="45"
+                       x:Name="Room"/>
                 <Entry Text="Freitag"
-                       HeightRequest="45"/>
+                       HeightRequest="45"
+                       x:Name="Day"/>
                 <Entry Text="wöchentlich"
-                       HeightRequest="45"/>
+                       HeightRequest="45"
+                       x:Name="Turnus"/>
                 <Entry Text="9:45"
-                       HeightRequest="45"/>
+                       HeightRequest="45"
+                       x:Name="Start"/>
                 <Entry Text="11:15"
-                       HeightRequest="45"/>
+                       HeightRequest="45"
+                       x:Name="End"/>
                 <Entry Text="Prof. Zug"
-                       HeightRequest="45"/>
+                       HeightRequest="45"
+                       x:Name="Lecturer"/>
                 
             </VerticalStackLayout>
         </HorizontalStackLayout>
@@ -100,6 +107,11 @@
         <Button Text="Plan generieren"
                 AbsoluteLayout.LayoutBounds="830, 800"
                 Style="{StaticResource ButtonS}">
+            
+        </Button>
+        <Button Text=" Custom Modul erstellen"
+                Style="{StaticResource ButtonS}"
+                AbsoluteLayout.LayoutBounds="530, 450">
             
         </Button>
 
