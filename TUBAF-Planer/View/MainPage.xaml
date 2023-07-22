@@ -54,6 +54,7 @@
         </Grid>
 
 
+
         <CollectionView ItemsSource="{Binding Modules}"
                         Grid.Column="0"
                         Grid.ColumnSpan="14"
@@ -97,6 +98,11 @@
                 Command="{Binding GetModuleListCommand}"
                 IsEnabled="{Binding IsNotBusy}"
                 Style="{StaticResource ButtonS}">
+
+                    
+        <Button Text="Add"
+                x:Name="But">
+
             
         </Button>
     </VerticalStackLayout>

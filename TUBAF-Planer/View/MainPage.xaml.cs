@@ -11,8 +11,12 @@ public partial class MainPage : ContentPage
 	public MainPage(PlanViewModel viewModel)
 	{
 		InitializeComponent();
+
 		BindingContext = viewModel;
-		//Modul modul = new Modul("#SPLUSCB0264");
+
+		Modul modul = new Modul("#SPLUSCB0264");
+		But.Text = modul.ToString();
+
 	}
 
 	
