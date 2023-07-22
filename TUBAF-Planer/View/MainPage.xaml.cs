@@ -1,4 +1,5 @@
 ﻿using Modulmethods;
+using System.Collections.Generic;
 
 namespace TUBAF_Planer;
 
@@ -9,9 +10,15 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
-		Modul modul = new Modul("#SPLUSCB0264");
-		But.Text = modul.ToString();
-	}
+		List<Modul> fullmodulelist = FullmoduleList.GetFullmoduleList();
+		string modulstring = "";
+		foreach(Modul modul in fullmodulelist)
+		{
+			modulstring += modul.ToString();
+		}
+		But.Text = modulstring;
+
+    }
 
 	
 }

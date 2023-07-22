@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nF/3VqAKRJG+EfgxhTugN2T884HJDSdSPqDPgwahUQR5o/+nX+SK4EgfTCdQyxkoEd0c9kktp0NJNwzEASjUoA==",
+  "dgSpecHash": "tOy9PMgvMqRPIOlFDL8VhN6DjlV3W8gLgxoJm4KiGMIZH0UMdm7OLTJ2ctUSsTwTGj86iRlT1vLXrtlR1OrAYg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Emil\\Desktop\\code\\TUBAF-Planer\\TubafTests\\TubafTests.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\Emil\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.9\\microsoft.data.sqlite.core.7.0.9.nupkg.sha512",
     "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.logging.debug\\7.0.0\\microsoft.extensions.logging.debug.7.0.0.nupkg.sha512",
+    "C:\\Users\\Emil\\.nuget\\packages\\microsoft.maui.graphics\\7.0.86\\microsoft.maui.graphics.7.0.86.nupkg.sha512",
     "C:\\Users\\Emil\\.nuget\\packages\\microsoft.net.test.sdk\\17.5.0\\microsoft.net.test.sdk.17.5.0.nupkg.sha512",
     "C:\\Users\\Emil\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Emil\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
