@@ -64,7 +64,10 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </Grid>
-
+        <Button Text="Add"
+                x:Name="But">
+            
+        </Button>
     </VerticalStackLayout>
     
 
