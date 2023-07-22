@@ -13,9 +13,6 @@ namespace Modulmethods
         private string? start;
         private string? end;
 
-        //für die Anzeige
-        private string offset;
-        private string size;
         public Modul(string Primkey)
         {
             //if(SQLMethods.GetRoom(Primkey) != null)
@@ -36,10 +33,6 @@ namespace Modulmethods
             this.start = SQLMethods.GetStart(Primkey);
             this.end = SQLMethods.GetEnd(Primkey);
 
-            this.offset = "0";
-            this.size = "40";
-
-            
         }
         public override string ToString()
         {
@@ -103,13 +96,73 @@ namespace Modulmethods
                 return end;
             }
         }
-        public string Offset
-        {
-            get => offset;
-        }
         public string Size
         {
-            get => size;
+            get
+            {
+
+            }
+        }
+        public string DayColumn
+        {
+            get
+            {
+                uint i=0;
+                switch (this.weekday)
+                {
+                    case "Montag":
+                        i=0;
+                        break;
+                    case "Dienstag":
+                        i=2;
+                        break;
+                    case "Mittwoch":
+                        i=4;
+                        break;
+                    case "Donnerstag":
+                        i=6;
+                        break;
+                    case "Freitag":
+                        i=8;
+                        break;
+                    case "Samstag":
+                        i=10;
+                        break;
+                    case "Sonntag":
+                        i=12;
+                        break;
+                    default: throw new Exception("Wochentag ist nicht in Datenbank enthalten"); 
+                }
+                if(this.turnus == "ungerade Woche")
+                {
+                    i++;
+                }
+                return i.ToString();
+            }
+        }
+        public string TurnusColumnSpan
+        {
+            get
+            {
+                switch (this.turnus)
+                {
+                    case "wöchentlich":
+                        return "2";
+                    case "ungerade Woche":
+                        return "1";
+                    case "gerade Woche":
+                        return "1";
+                    default: throw new Exception("Turnus ist nicht zulässig");
+                }
+            }
+        }
+        public string TimeRowStart
+        {
+            get
+            {
+                Random rand = new();
+                return Convert.ToString( rand.Next(700));
+            }
         }
     }
 
