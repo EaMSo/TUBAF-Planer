@@ -1,9 +1,5 @@
-//using CloudKit;
 using Microsoft.Data.Sqlite;
-using Microsoft.Maui.Storage;
 using Microsoft.VisualBasic;
-using System.Reflection;
-using FileSystem = Microsoft.Maui.Storage.FileSystem;
 
 namespace Modulmethods
 {
@@ -142,7 +138,7 @@ namespace Modulmethods
             }
             return modularray.Distinct().ToArray();
         }
-        //
+
         public static Array GetAllWahlpflichtCourses(string Modulname, string Tablename)
         {
             string[] modularray = new string[GetAllWahlpflichtModPrimKey(Modulname).Count];

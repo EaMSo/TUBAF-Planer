@@ -1,10 +1,4 @@
 ﻿using Microsoft.Data.Sqlite;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 #nullable enable
 
 namespace Modulmethods
@@ -29,9 +23,6 @@ namespace Modulmethods
 
         public CustomModule(string Primkey) : base(Primkey)
         {
-            
-            //if(SQLMethods.GetRoom(Primkey) != null)
-            //throw new ArgumentNullException("Modul hat keinen Raum!");
             this.coursename = SQLMethods.GetCourseName(Primkey, TableName);
             if (SQLMethods.GetTurnus(Primkey, TableName) != null)
             {
@@ -60,12 +51,13 @@ namespace Modulmethods
             }
         }
 
-        static string CreateCustomModule(string Lehrveranstaltung, string Art, string Dozenten, string Turnus, string Raum, string Wochentag, string Beginn, string Ende)
+        static public string CreateCustomModule(string Lehrveranstaltung, string Art, string Dozenten, string Turnus, string Raum, string Wochentag, string Beginn, string Ende)
         {
             string Primekey = GetUniquePrimkey();
             var connection = new SqliteConnection($"Data Source={DBWriting.GetDBPath()}");
             using (var command = connection.CreateCommand())
             {
+                connection.Open();
                 command.CommandText = "INSERT INTO CustomModule (Primärschlüssel, Lehrveranstaltung, Art, Dozenten, Turnus, Raum, Wochentag, Beginn, Ende) VALUES (@a, @b, @c, @d, @e, @f, @g, @h, @i)";
                 command.Parameters.AddWithValue("@a", Primekey);
                 command.Parameters.AddWithValue("@b", Lehrveranstaltung);
@@ -87,8 +79,10 @@ namespace Modulmethods
             var connection = new SqliteConnection($"Data Source={DBWriting.GetDBPath()}");
             using (var command = connection.CreateCommand())
             {
+                connection.Open();
                 command.CommandText = "SELECT COUNT(*) FROM CustomModule";
-                int anzahl = Convert.ToInt32(command.ExecuteScalar());
+                int anzahl = Convert.ToInt32(command.ExecuteScalar()); 
+
                 while (primliste.Contains("#"+anzahl))
                 {
                     anzahl++;
@@ -96,7 +90,7 @@ namespace Modulmethods
                 return "#"+ anzahl.ToString();
             }
         }
-        static void DeleteModuleByPrimäryKey(string Primärschlüssel)
+        static public void DeleteModuleByPrimäryKey(string Primärschlüssel)
         {
             var connection = new SqliteConnection($"Data Source={DBWriting.GetDBPath()}");
             using (var command = connection.CreateCommand())

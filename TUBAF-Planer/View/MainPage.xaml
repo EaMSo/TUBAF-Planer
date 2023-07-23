@@ -11,37 +11,37 @@
 
         <Grid ColumnDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*,*"
               RowDefinitions="*, *"
-                HeightRequest="50"
-                WidthRequest="1800"
-                Style="{StaticResource StackBackColor}">
+              HeightRequest="50"
+              WidthRequest="1800"
+              Style="{StaticResource StackBackColor}">
             <Label Text="Montag"
                    HorizontalOptions="Center"
-                    Grid.Column="0"
-                    Grid.ColumnSpan="2"/>
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"/>
             <Label Text="Dienstag"
                    HorizontalOptions="Center"
-                    Grid.Column="2"
-                    Grid.ColumnSpan="2"/>
+                   Grid.Column="2"
+                   Grid.ColumnSpan="2"/>
             <Label Text="Mittwoch"
                    HorizontalOptions="Center"
-                    Grid.Column="4"
-                    Grid.ColumnSpan="2"/>
+                   Grid.Column="4"
+                   Grid.ColumnSpan="2"/>
             <Label Text="Donnerstag"
                    HorizontalOptions="Center"
-                    Grid.Column="6"
-                    Grid.ColumnSpan="2"/>
+                   Grid.Column="6"
+                   Grid.ColumnSpan="2"/>
             <Label Text="Freitag"
                    HorizontalOptions="Center"
-                    Grid.Column="8"
-                    Grid.ColumnSpan="2"/>
+                   Grid.Column="8"
+                   Grid.ColumnSpan="2"/>
             <Label Text="Samstag"
                    HorizontalOptions="Center"
-                    Grid.Column="10"
-                    Grid.ColumnSpan="2"/>
+                   Grid.Column="10"
+                   Grid.ColumnSpan="2"/>
             <Label Text="Sonntag"
                    HorizontalOptions="Center"
-                    Grid.Column="12"
-                    Grid.ColumnSpan="2"/>
+                   Grid.Column="12"
+                   Grid.ColumnSpan="2"/>
             <Label Text="gerade Woche"
                    HorizontalOptions="Center"
                    Grid.Column="0"
@@ -56,9 +56,9 @@
         <!-- Grid mit 800 Reihen, da Grid mit RelativeLayout nicht funktioniert-->
         <Grid ColumnDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*,*"
               RowDefinitions="1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"
-                            HeightRequest="800"
-                            WidthRequest="1800"
-                            BackgroundColor="{StaticResource ListBackColorDark }"
+              HeightRequest="800"
+              WidthRequest="1800"
+              BackgroundColor="{StaticResource ListBackColorDark }"
               BindableLayout.ItemsSource="{Binding Modules}">
             <BindableLayout.ItemTemplate>
                 <DataTemplate x:DataType="model:Modul">
@@ -76,9 +76,9 @@
                         </Frame.GestureRecognizers>
                         <VerticalStackLayout>
                             <Label Text="{Binding Coursename}"
-                                        HorizontalOptions="Start"
-                                        Style="{StaticResource SmallLabel}"
-                                        HeightRequest="20"/>
+                                   HorizontalOptions="Start"
+                                   Style="{StaticResource SmallLabel}"
+                                   HeightRequest="20"/>
                             <Label Text="{Binding Room}"
                                    HorizontalOptions="Start"
                                    Style="{StaticResource SmallLabel}"/>
@@ -87,16 +87,6 @@
                 </DataTemplate>
             </BindableLayout.ItemTemplate>
         </Grid>
-
-
-        
-
-
-        <Button Text="Add"
-                x:Name="But">
-
-
-        </Button>
     </VerticalStackLayout>
     
 

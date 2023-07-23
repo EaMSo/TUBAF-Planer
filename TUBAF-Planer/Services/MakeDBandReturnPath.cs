@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Modulmethods
 {
     public class DBWriting
@@ -13,7 +8,7 @@ namespace Modulmethods
         {
 
             string databaseName = "TUFreibergModule.db";
-            string databasePath = System.IO.Path.Combine(FileSystem.AppDataDirectory, databaseName);
+            string databasePath = Path.Combine(FileSystem.AppDataDirectory, databaseName);
             if (File.Exists(databasePath))
             {
                 return databasePath;

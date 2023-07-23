@@ -7,6 +7,7 @@
              xmlns:model="clr-namespace:Modulmethods"
              Style="{StaticResource BackColor}">
     <AbsoluteLayout>
+        <!-- not implemented-->
         <Entry AbsoluteLayout.LayoutBounds="10, 0, 300, 50"
                Placeholder="Studiengang">
             
@@ -19,6 +20,7 @@
             
         </Button>
         <StackLayout AbsoluteLayout.LayoutBounds="10, 60, 300, 1500">
+            <!-- not implemented-->
             <SearchBar Placeholder="Module">
 
             </SearchBar>
@@ -42,19 +44,38 @@
                 </CollectionView.ItemTemplate>
                 
             </CollectionView>
+            
+            <!-- not implemented-->
             <SearchBar Placeholder="eigene Module">
 
             </SearchBar>
             <CollectionView HeightRequest="300"
                             WidthRequest="300"
-                            Style="{StaticResource ListBack}">
-                
+                            Style="{StaticResource ListBack}"
+                            ItemsSource="{Binding CustomModules}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Modul">
+                        <Frame>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer CommandParameter="{Binding .}"
+                                                      Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PlanBuilderViewModel}}, Path=DisplayModuleCommand}">
+
+                                </TapGestureRecognizer>
+                            </Frame.GestureRecognizers>
+                            <Label Text="{Binding Coursename}"/>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
             </CollectionView>
         </StackLayout>
         <HorizontalStackLayout AbsoluteLayout.LayoutBounds="320, 60, 500, 500">
             <VerticalStackLayout WidthRequest="150"
                                  Padding="15">
                 <Label Text="Modulname:"
+                       HorizontalOptions="End"
+                       HeightRequest="45"/>
+                <Label Text="Modultyp:"
                        HorizontalOptions="End"
                        HeightRequest="45"/>
                 <Label Text="Raum:"
@@ -79,6 +100,9 @@
             </VerticalStackLayout>
             <VerticalStackLayout>
                             <Entry Text="{Binding Ecoursename}"
+                                   HeightRequest="45"
+                                   WidthRequest="400"/>
+                            <Entry Text="{Binding Etype}"
                                    HeightRequest="45"
                                    WidthRequest="400"/>
                             <Entry Text="{Binding Eroom}"
@@ -106,13 +130,16 @@
                 Text="Hinzufügen"
                 FontSize="10"   
                 Style="{StaticResource ButtonS}"
-                Command="{Binding AddModuleToSelectedListCommand}">
+                Command="{Binding AddModuleToSelectedListCommand}"
+                IsEnabled="{Binding IsNotBusy}">
 
         </Button>
+        <!-- not implemented-->
         <Button AbsoluteLayout.LayoutBounds="900, 260, 100, 50"
                 Text="Entfernen"
                 FontSize="10"   
-                Style="{StaticResource ButtonS}">
+                Style="{StaticResource ButtonS}"
+                IsEnabled="{Binding IsNotBusy}">
 
         </Button>
         <VerticalStackLayout AbsoluteLayout.LayoutBounds="1230 ,70 , 300, 1500">
@@ -138,6 +165,7 @@
 
 
         </VerticalStackLayout>
+        <!-- not implemented-->
         <Button Text="Plan generieren"
                 AbsoluteLayout.LayoutBounds="1230, 800"
                 Style="{StaticResource ButtonS}">
@@ -147,7 +175,7 @@
                 Style="{StaticResource ButtonS}"
                 AbsoluteLayout.LayoutBounds="530, 450"
                 Command="{Binding CreateCustomModuleCommand}"
-                IsEnabled="True">
+                IsEnabled="{Binding IsNotBusy}">
             
         </Button>
 

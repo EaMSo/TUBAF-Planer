@@ -2,9 +2,6 @@
 using CommunityToolkit.Mvvm.Input;
 using Modulmethods;
 using System.Collections.ObjectModel;
-using System.Reflection;
-using TUBAF_Planer;
-
 
 
 namespace TUBAFPlaner.ViewModel;
@@ -13,6 +10,8 @@ public partial class PlanBuilderViewModel : BaseViewModel
 {
     [ObservableProperty]
     string ecoursename; //Properties der Entry Felder
+    [ObservableProperty]
+    string etype;
     [ObservableProperty]
     string electurer;
     [ObservableProperty]
@@ -26,7 +25,7 @@ public partial class PlanBuilderViewModel : BaseViewModel
     [ObservableProperty]
     string eend;
     public ObservableCollection<Modul> Module { get; set; }
-    public ObservableCollection<Modul> CustomModule { get; set; }
+    public ObservableCollection<Modul> CustomModules { get; set; }
     public ObservableCollection<Modul> SelectedModules { get; set; }
     [ObservableProperty]
     Modul currentModule;
@@ -69,7 +68,10 @@ public partial class PlanBuilderViewModel : BaseViewModel
     [RelayCommand]
     public void DisplayModule(Modul modul)
     {
+        IsBusy = true;
+
         Ecoursename = modul.Coursename;
+        Etype = modul.Type;
         Electurer = modul.Lecturer;
         Eroom = modul.Room;
         Eweekday = modul.Weekday;
@@ -77,19 +79,31 @@ public partial class PlanBuilderViewModel : BaseViewModel
         Estart = modul.Start;
         Eend = modul.End;
         CurrentModule = modul;
+
+        IsBusy = false;
     }
 
 
     [RelayCommand]
     void CreateCustomModule() 
     {
-        string test = Ecoursename;
-        // to do CustomModule CModule = CreateCustomModule();
+        IsBusy = true;
+        string key = CustomModule.CreateCustomModule(Ecoursename, Etype, Electurer, Eturnus, Eroom, Eweekday, Estart, Eend);
+
+        // to do 
+
+        IsBusy = false;
     }
 
     [RelayCommand]
     public void AddModuleToSelectedList()
     {
         SelectedModules.Add(CurrentModule);
+    }
+
+    bool CheckForType()
+    {
+        //Etype;
+        return true;
     }
 }
