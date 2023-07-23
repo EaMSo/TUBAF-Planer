@@ -1,11 +1,14 @@
 using Microsoft.Data.Sqlite;
 using Microsoft.VisualBasic;
 
+#nullable enable
 
 namespace Modulmethods
 {
-    public class Modul 
+    public class Modul : Abstractmodul
     {
+        const string Tablename = "Module";
+
         public const uint EarliestStartTime = 450; // entspricht 7:30
         public const uint LatestEndTime = 1170; // 19:30
         public const uint TableHeight = 800; // Höhe der Plantabelle
@@ -18,25 +21,25 @@ namespace Modulmethods
         private string? start;
         private string? end;
 
-        public Modul(string Primkey)
+        public Modul(string Primkey) : base(Primkey)
         {
             //if(SQLMethods.GetRoom(Primkey) != null)
             //throw new ArgumentNullException("Modul hat keinen Raum!");
-            this.coursename = SQLMethods.GetCourseName(Primkey);
-            if(SQLMethods.GetTurnus(Primkey)!= null)
+            this.coursename = SQLMethods.GetCourseName(Primkey, Tablename);
+            if(SQLMethods.GetTurnus(Primkey, Tablename) != null)
             {
-            this.turnus = SQLMethods.GetTurnus(Primkey);
+            this.turnus = SQLMethods.GetTurnus(Primkey, Tablename);
             }
             else
             {
                this.turnus = "wöchentlich";
             }
-            this.type = SQLMethods.GetType(Primkey);
-            this.weekday = SQLMethods.GetWeekday(Primkey);
-            this.lecturer = SQLMethods.GetLecturerName(Primkey);
-            this.room = SQLMethods.GetRoom(Primkey);
-            this.start = SQLMethods.GetStart(Primkey);
-            this.end = SQLMethods.GetEnd(Primkey);
+            this.type = SQLMethods.GetType(Primkey, Tablename);
+            this.weekday = SQLMethods.GetWeekday(Primkey, Tablename);
+            this.lecturer = SQLMethods.GetLecturerName(Primkey, Tablename);
+            this.room = SQLMethods.GetRoom(Primkey, Tablename);
+            this.start = SQLMethods.GetStart(Primkey, Tablename);
+            this.end = SQLMethods.GetEnd(Primkey, Tablename);
 
         }
         public override string ToString()
