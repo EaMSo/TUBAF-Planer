@@ -1,11 +1,13 @@
+using CommunityToolkit.Mvvm.Input;
 using Microsoft.Data.Sqlite;
 using Microsoft.VisualBasic;
 
 #nullable enable
 
+
 namespace Modulmethods
 {
-    public class Modul : Abstractmodul
+    public partial class Modul : Abstractmodul
     {
         const string Tablename = "Module";
 
@@ -104,7 +106,7 @@ namespace Modulmethods
                 return end;
             }
         }
-        public string Size
+        public string Size //todo
         {
             get
             {

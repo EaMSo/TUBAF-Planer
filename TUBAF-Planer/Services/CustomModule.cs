@@ -9,7 +9,9 @@ using System.Threading.Tasks;
 
 namespace Modulmethods
 {
-    class CustomModule : Abstractmodul
+
+
+    public class CustomModule : Abstractmodul
     {
         const string TableName = "CustomModule";
 

@@ -13,51 +13,7 @@ public partial class PlanViewModel : BaseViewModel
         
     }
 
-    [RelayCommand]
-    async Task GetModuleListAsync() //mach liste
-    {
-        if (IsBusy)
-        {
-            return;
-        }
-
-        try
-        {
-            IsBusy = true;
-            if(Modules.Count > 0)
-            {
-                Modules.Clear();    
-            }
-
-
-            var modules = new List<Modulmethods.Modul>()
-            {
-                new Modulmethods.Modul("#SPLUS3DE77D"),
-                new Modulmethods.Modul("#SPLUS7D7D5F"),
-                new Modulmethods.Modul("#SPLUS85CD1B"),
-                new Modulmethods.Modul("#SPLUSC8FF38"),
-                new Modulmethods.Modul("666"),
-                new Modulmethods.Modul("#SPLUS72DD09"),
-                new Modulmethods.Modul("#SPLUSB86734")
-
-
-            };
-
-            foreach (var mod in modules)
-            {
-                Modules.Add(mod);
-            }
-
-        }
-        catch (Exception ex)
-        {
-            Debug.WriteLine(ex);
-        }
-        finally
-        {
-            IsBusy = false;
-        }
-    }
+    
 
     [RelayCommand]
     async Task GoToPlanDetailsAsync(Modulmethods.Modul modul)
