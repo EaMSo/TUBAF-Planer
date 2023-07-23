@@ -1,0 +1,55 @@
+@startuml TUBAF_Planer_Class_Diagram_Updated
+
+namespace TUBAF_Planer {
+    class Frontend {
+        +DisplaySchedule()
+        +Interface for User()
+    }
+
+    namespace Modulmethods {
+        class SQLMethods {
+            +GetDataFromDatabase(): List<Modul>
+        }
+
+        class Modul {
+            +propertiesofmoduls
+        }
+
+        class FullmoduleList {
+            +GetFullmoduleList(): List<Modul>
+        }
+
+        class CustomModule {
+            +CreateCustomModule()
+        }
+
+        class ModuleOverlapping {
+            +CheckOverlapping(modules: List<Modul>): bool
+        }
+
+        class DBWriting {
+            +GetDBPath()
+        }
+    }
+}
+
+namespace TUBAFTests {
+    class UnitTests << (T,#FF7700) Unit Testing >> {
+        +RunTests()
+    }
+}
+
+TUBAF_Planer.Frontend -- TUBAF_Planer.Modulmethods.CustomModule : "manipulates data"
+TUBAF_Planer.Frontend -- TUBAF_Planer.Modulmethods.ModuleOverlapping : "checks overlaps"
+TUBAF_Planer.Frontend -- TUBAF_Planer.Modulmethods.FullmoduleList : "uses FullmoduleList"
+TUBAF_Planer.Modulmethods.Modul --* TUBAF_Planer.Modulmethods.SQLMethods :uses
+TUBAF_Planer.Modulmethods.FullmoduleList --* TUBAF_Planer.Modulmethods.Modul 
+TUBAF_Planer.Modulmethods.CustomModule --* TUBAF_Planer.Modulmethods.Modul
+TUBAF_Planer.Frontend --* TUBAF_Planer.Modulmethods.Modul
+TUBAF_Planer.Modulmethods.FullmoduleList --* TUBAF_Planer.Modulmethods.DBWriting : "interacts with DB"
+TUBAF_Planer.Modulmethods.CustomModule -* TUBAF_Planer.Modulmethods.DBWriting : "interacts with DB"
+
+TUBAF_Planer.Modulmethods -- TUBAFTests.UnitTests : "used for unit testing"
+TUBAF_Planer.Frontend -- TUBAFTests.UnitTests : "used for unit testing"
+
+@enduml
