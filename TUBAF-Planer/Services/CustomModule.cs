@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Modulmethods
 {
-    class CustomModule
+    public class CustomModule
     {
         public static void CreateTable()
         {

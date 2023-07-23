@@ -1,10 +1,11 @@
+using CommunityToolkit.Mvvm.Input;
 using Microsoft.Data.Sqlite;
 using Microsoft.VisualBasic;
 
-
+#nullable enable
 namespace Modulmethods
 {
-    public class Modul 
+    public partial class Modul 
     {
         public const uint EarliestStartTime = 450; // entspricht 7:30
         public const uint LatestEndTime = 1170; // 19:30
@@ -101,7 +102,7 @@ namespace Modulmethods
                 return end;
             }
         }
-        public string Size
+        public string Size //todo
         {
             get
             {

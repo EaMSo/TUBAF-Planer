@@ -89,10 +89,7 @@
         </Grid>
 
 
-        <Button Text="ListTest"
-                Command="{Binding GetModuleListCommand}"
-                IsEnabled="{Binding IsNotBusy}"
-                Style="{StaticResource ButtonS}"/>
+        
 
 
         <Button Text="Add"

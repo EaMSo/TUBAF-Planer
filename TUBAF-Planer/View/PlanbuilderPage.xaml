@@ -4,6 +4,7 @@
              x:Class="TUBAF_Planer.PlanbuilderPage"
              xmlns:viewmodel="clr-namespace:TUBAFPlaner.ViewModel"
              x:DataType="viewmodel:PlanBuilderViewModel"
+             xmlns:model="clr-namespace:Modulmethods"
              Style="{StaticResource BackColor}">
     <AbsoluteLayout>
         <Entry AbsoluteLayout.LayoutBounds="10, 0, 300, 50"
@@ -12,7 +13,9 @@
         </Entry>
         <Button Text="Module suchen"
                 AbsoluteLayout.LayoutBounds="320,0"
-                Style="{StaticResource ButtonS}">
+                Style="{StaticResource ButtonS}"
+                Command="{Binding LoadModulesCommand}"
+                IsEnabled="{Binding IsNotBusy}">
             
         </Button>
         <StackLayout AbsoluteLayout.LayoutBounds="10, 60, 300, 1500">
@@ -21,7 +24,22 @@
             </SearchBar>
             <CollectionView HeightRequest="300"
                             WidthRequest="300"
-                            Style="{StaticResource ListBack}">
+                            Style="{StaticResource ListBack}"
+                            ItemsSource="{Binding Module}"
+                            x:Name="Modulcollection">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Modul">
+                        <Frame>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer CommandParameter="{Binding .}"
+                                                      Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PlanBuilderViewModel}}, Path=DisplayModuleCommand}">
+                                                       
+                                </TapGestureRecognizer>
+                            </Frame.GestureRecognizers>
+                            <Label Text="{Binding Coursename}"/>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
                 
             </CollectionView>
             <SearchBar Placeholder="eigene Module">
@@ -34,7 +52,7 @@
             </CollectionView>
         </StackLayout>
         <HorizontalStackLayout AbsoluteLayout.LayoutBounds="320, 60, 500, 500">
-            <VerticalStackLayout WidthRequest="200"
+            <VerticalStackLayout WidthRequest="150"
                                  Padding="15">
                 <Label Text="Modulname:"
                        HorizontalOptions="End"
@@ -60,54 +78,68 @@
 
             </VerticalStackLayout>
             <VerticalStackLayout>
-                            <Entry Text="{Binding Coursename}"
+                            <Entry Text="{Binding Ecoursename}"
                                    HeightRequest="45"
-                                   WidthRequest="120"/>
-                            <Entry Text="{Binding Room}"
+                                   WidthRequest="400"/>
+                            <Entry Text="{Binding Eroom}"
                                    HeightRequest="45"
-                                   WidthRequest="120"/>
-                            <Entry Text="{Binding Weekday}"
+                                   WidthRequest="400"/>
+                            <Entry Text="{Binding Eweekday}"
                                    HeightRequest="45"
-                                   WidthRequest="120"/>
-                            <Entry Text="{Binding Turnus}"
+                                   WidthRequest="400"/>
+                            <Entry Text="{Binding Eturnus}"
                                    HeightRequest="45"
-                                   WidthRequest="120"/>
-                            <Entry Text="{Binding Start}"
+                                   WidthRequest="400"/>
+                            <Entry Text="{Binding Estart}"
                                    HeightRequest="45"
-                                   WidthRequest="120"/>
-                            <Entry Text="{Binding End}"
+                                   WidthRequest="400"/>
+                            <Entry Text="{Binding Eend}"
                                    HeightRequest="45"
-                                   WidthRequest="120"/>
-                            <Entry Text="{Binding Lecturer}"
-                               HeightRequest="45"
-                                   WidthRequest="120"/>
+                                   WidthRequest="400"/>
+                            <Entry Text="{Binding Electurer}"
+                                   HeightRequest="45"
+                                   WidthRequest="400"/>
                         </VerticalStackLayout>
                 
         </HorizontalStackLayout>
-        <Button AbsoluteLayout.LayoutBounds="700, 210, 100, 50"
+        <Button AbsoluteLayout.LayoutBounds="900, 210, 100, 50"
                 Text="Hinzufügen"
                 FontSize="10"   
-                Style="{StaticResource ButtonS}">
+                Style="{StaticResource ButtonS}"
+                Command="{Binding AddModuleToSelectedListCommand}">
 
         </Button>
-        <Button AbsoluteLayout.LayoutBounds="700, 260, 100, 50"
+        <Button AbsoluteLayout.LayoutBounds="900, 260, 100, 50"
                 Text="Entfernen"
                 FontSize="10"   
                 Style="{StaticResource ButtonS}">
 
         </Button>
-        <VerticalStackLayout AbsoluteLayout.LayoutBounds="830 ,70 , 300, 1500">
+        <VerticalStackLayout AbsoluteLayout.LayoutBounds="1230 ,70 , 300, 1500">
             <Label Text="gewählte Module"/>
             <CollectionView WidthRequest="300"
                             HeightRequest="700"
-                            Style="{StaticResource ListBack}">
-                
+                            Style="{StaticResource ListBack}"
+                            ItemsSource="{Binding SelectedModules}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Modul">
+                        <Frame>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer CommandParameter="{Binding .}"
+                                                      Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PlanBuilderViewModel}}, Path=DisplayModuleCommand}">
+                            
+                                </TapGestureRecognizer>
+                            </Frame.GestureRecognizers>
+                            <Label Text="{Binding Coursename}"/>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
             </CollectionView>
 
 
         </VerticalStackLayout>
         <Button Text="Plan generieren"
-                AbsoluteLayout.LayoutBounds="830, 800"
+                AbsoluteLayout.LayoutBounds="1230, 800"
                 Style="{StaticResource ButtonS}">
             
         </Button>
