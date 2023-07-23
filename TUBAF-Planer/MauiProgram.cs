@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-using Microsoft.Maui.Controls.Compatibility.Hosting;
+using Modulmethods;
 using TUBAF_Planer.View;
 using TUBAFPlaner.ViewModel;
 
@@ -17,12 +17,13 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
+        CustomModule.CreateTable();
 
 #if DEBUG
-		builder.Logging.AddDebug();
+        builder.Logging.AddDebug();
 #endif
 		builder.Services.AddSingleton<MainPage>();
-		builder.Services.AddTransient<PlanViewModel>();
+		builder.Services.AddSingleton<PlanViewModel>();
 		builder.Services.AddTransient<ModulDetailViewModel>();
 		builder.Services.AddTransient<ModulDetailPage>();	
 		builder.Services.AddSingleton<PlanBuilderViewModel>();

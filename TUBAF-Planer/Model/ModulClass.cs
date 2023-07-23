@@ -1,13 +1,9 @@
-using CommunityToolkit.Mvvm.Input;
-using Microsoft.Data.Sqlite;
-using Microsoft.VisualBasic;
-
 #nullable enable
 
 
 namespace Modulmethods
 {
-    public partial class Modul : Abstractmodul
+    public class Modul : Abstractmodul
     {
         const string Tablename = "Module";
 
@@ -25,8 +21,6 @@ namespace Modulmethods
 
         public Modul(string Primkey) : base(Primkey)
         {
-            //if(SQLMethods.GetRoom(Primkey) != null)
-            //throw new ArgumentNullException("Modul hat keinen Raum!");
             this.coursename = SQLMethods.GetCourseName(Primkey, Tablename);
             if(SQLMethods.GetTurnus(Primkey, Tablename) != null)
             {
@@ -113,7 +107,7 @@ namespace Modulmethods
                 return "60";
             }
         }
-        public string DayColumn //Modul in die richtige SPalte einordnen
+        public string DayColumn //Modul in die richtige Spalte einordnen
         {
             get
             {
