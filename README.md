@@ -12,7 +12,11 @@ Automatisch generierter Modul-Wochenplan für die Technische Universität Bergak
 - wärend der Entwicklung des Programms werden auch noch weitere Features realisiert (wenn es sich anbietet)
 ## Porten?
 - wenn die Software auf einem Computer funktioniert wäre es vorstellbar sie auch auf Android und IOS zu Porten (und eventuell auch auf eine Website)
-
+## Schwierigkeiten beim Testen
+   Wie sich herausgestellt hat ist XUnit nicht instande bestimmte Dinge in einem MAUI Projekt sinnvoll zu Testen siehe [hier](https://learn.microsoft.com/en-us/answers/questions/1190946/cant-use-microsoft-maui-storage-preferences-in-uni).
+   Wir haben probiert die Lösung, die dort beschrieben wird und viele andere zu Implementieren, aber es funktionierte nicht. Der Fehler beim Testen kann reproduziert werden, wenn der auskommentierte Code in Unittest1 beim Testen benutzt wird. 
+   Dazu einfach entkommentieren, speichern und dann "dotnet test" in die Kommandozeile eingeben. Wenn eine einfache Lösung für diesen Fehler existiert würde mich sehr interesieren wie diese geht.   ~Emil Sommer
+  
 
 ## Zusätzlich benutzte Pakete
 - [Microsoft.Data.Sqlite](https://www.nuget.org/packages/Microsoft.Data.Sqlite) (um SQLite als Datenbank nutzen zu können)
