@@ -44,7 +44,7 @@ namespace Modulmethods
             }
             return primärschlüsselallemodule;
         }
-        private static string SQLTemplate_Select_Spicific_SingleOutput(string searchstring, string input_Table,string output_Table)
+        private static string SQLTemplate_Select_Spicific_SingleOutput(string searchstring, string input_Table,string output_Table,string Tablename)
         {
             var path = DBWriting.GetDBPath();
             string primärschlüsselallemodule = "";
@@ -55,7 +55,7 @@ namespace Modulmethods
             {
             connection.Open();
             var command = connection.CreateCommand();
-            command.CommandText = @"SELECT "+output_Table+" FROM Module WHERE "+ input_Table +" IS" +ControlChars.Quote+searchstring+ControlChars.Quote;
+            command.CommandText = @"SELECT "+output_Table+" FROM "+ Tablename +" WHERE "+ input_Table +" IS" +ControlChars.Quote+searchstring+ControlChars.Quote;
             using var reader = command.ExecuteReader();
             while (reader.Read())
                 {
@@ -131,25 +131,25 @@ namespace Modulmethods
             return SQLTemplate_Select_LIKE(FieldNotObligatory, Modulname);
         }
         //same Input like the above but gives back the names of the courses
-        public static Array GetAllPflichtCourses(string Modulname)
+        public static Array GetAllPflichtCourses(string Modulname, string Tablename)
         {
             string[] modularray = new string[GetAllPflichtModPrimKey(Modulname).Count];
             int k = 0;
             foreach(string Primkey in GetAllPflichtModPrimKey(Modulname))
             {
-                modularray[k] = SQLTemplate_Select_Spicific_SingleOutput(Primkey,FieldPrimär,FieldCourses);
+                modularray[k] = SQLTemplate_Select_Spicific_SingleOutput(Primkey,FieldPrimär,FieldCourses, Tablename);
                 k++;
             }
             return modularray.Distinct().ToArray();
         }
         //
-        public static Array GetAllWahlpflichtCourses(string Modulname)
+        public static Array GetAllWahlpflichtCourses(string Modulname, string Tablename)
         {
             string[] modularray = new string[GetAllWahlpflichtModPrimKey(Modulname).Count];
             int k = 0;
             foreach(string Primkey in GetAllWahlpflichtModPrimKey(Modulname))
             {
-                modularray[k] = SQLTemplate_Select_Spicific_SingleOutput(Primkey,FieldPrimär,FieldCourses);
+                modularray[k] = SQLTemplate_Select_Spicific_SingleOutput(Primkey,FieldPrimär,FieldCourses, Tablename);
                 k++;
             }
             return modularray.Distinct().ToArray();
@@ -160,37 +160,37 @@ namespace Modulmethods
            return SQLTemplate_Select_Spicific_MultipleOutputs(Coursbezeichnung,FieldCourses,FieldPrimär);
         }
         //GetsDifferentvaluesfromPrimaryKeys
-        internal static string GetTurnus(string PrimKey)
+        internal static string GetTurnus(string PrimKey, string Tablename)
         {
-           return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldTurnus);
+           return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldTurnus, Tablename);
         }
-        internal static string GetWeekday(string PrimKey)
+        internal static string GetWeekday(string PrimKey, string Tablename)
         {
-           return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldWeekday);
+           return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldWeekday, Tablename);
         }
-        internal static string GetRoom(string PrimKey)
+        internal static string GetRoom(string PrimKey, string Tablename)
         {
-           return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldRoom);
+           return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldRoom, Tablename);
         }
-        internal static string GetStart(string PrimKey)
+        internal static string GetStart(string PrimKey, string Tablename)
         {
-           return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldStart);
+           return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldStart, Tablename);
         }
-        internal static string GetEnd(string PrimKey)
+        internal static string GetEnd(string PrimKey, string Tablename)
         {
-           return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldEnd);
+           return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldEnd, Tablename);
         }
-        internal static string GetCourseName(string PrimKey)
+        internal static string GetCourseName(string PrimKey, string Tablename)
         {
-           return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldCourses);
+           return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldCourses, Tablename);
         }
-        internal static string GetLecturerName(string PrimKey)
+        internal static string GetLecturerName(string PrimKey, string Tablename)
         {
-           return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldLecturer);
+           return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldLecturer, Tablename);
         }
-        internal static string GetType(string PrimKey)
+        internal static string GetType(string PrimKey, string Tablename)
         {
-           return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldType);
+           return SQLTemplate_Select_Spicific_SingleOutput(PrimKey,FieldPrimär,FieldType, Tablename);
         }
     }
 }
