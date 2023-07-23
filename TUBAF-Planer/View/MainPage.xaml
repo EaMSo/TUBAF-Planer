@@ -5,7 +5,6 @@
              xmlns:viewmodel="clr-namespace:TUBAFPlaner.ViewModel"
              x:DataType="viewmodel:PlanViewModel"             
              x:Class="TUBAF_Planer.MainPage"
-             xmlns:cmp="clr-namespace:Microsoft.Maui.Controls.Compatibility;assembly=Microsoft.Maui.Controls"
              Style="{StaticResource BackColor}">
 
     <VerticalStackLayout>

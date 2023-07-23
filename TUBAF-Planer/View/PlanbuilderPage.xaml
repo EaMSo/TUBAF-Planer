@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TUBAF_Planer.PlanbuilderPage"
+             xmlns:viewmodel="clr-namespace:TUBAFPlaner.ViewModel"
+             x:DataType="viewmodel:PlanBuilderViewModel"
              Style="{StaticResource BackColor}">
     <AbsoluteLayout>
         <Entry AbsoluteLayout.LayoutBounds="10, 0, 300, 50"
@@ -31,7 +33,7 @@
                 
             </CollectionView>
         </StackLayout>
-        <HorizontalStackLayout AbsoluteLayout.LayoutBounds="320, 60, 500, 1500">
+        <HorizontalStackLayout AbsoluteLayout.LayoutBounds="320, 60, 500, 500">
             <VerticalStackLayout WidthRequest="200"
                                  Padding="15">
                 <Label Text="Modulname:"
@@ -57,30 +59,30 @@
                        HeightRequest="45"/>
 
             </VerticalStackLayout>
-            <VerticalStackLayout Padding="15">
-                <Entry Text="Softwareentwicklung"
-                       HeightRequest="45"
-                       x:Name="Coursename"/>
-                <Entry Text="AUD 1001"
-                       HeightRequest="45"
-                       x:Name="Room"/>
-                <Entry Text="Freitag"
-                       HeightRequest="45"
-                       x:Name="Day"/>
-                <Entry Text="wöchentlich"
-                       HeightRequest="45"
-                       x:Name="Turnus"/>
-                <Entry Text="9:45"
-                       HeightRequest="45"
-                       x:Name="Start"/>
-                <Entry Text="11:15"
-                       HeightRequest="45"
-                       x:Name="End"/>
-                <Entry Text="Prof. Zug"
-                       HeightRequest="45"
-                       x:Name="Lecturer"/>
+            <VerticalStackLayout>
+                            <Entry Text="{Binding Coursename}"
+                                   HeightRequest="45"
+                                   WidthRequest="120"/>
+                            <Entry Text="{Binding Room}"
+                                   HeightRequest="45"
+                                   WidthRequest="120"/>
+                            <Entry Text="{Binding Weekday}"
+                                   HeightRequest="45"
+                                   WidthRequest="120"/>
+                            <Entry Text="{Binding Turnus}"
+                                   HeightRequest="45"
+                                   WidthRequest="120"/>
+                            <Entry Text="{Binding Start}"
+                                   HeightRequest="45"
+                                   WidthRequest="120"/>
+                            <Entry Text="{Binding End}"
+                                   HeightRequest="45"
+                                   WidthRequest="120"/>
+                            <Entry Text="{Binding Lecturer}"
+                               HeightRequest="45"
+                                   WidthRequest="120"/>
+                        </VerticalStackLayout>
                 
-            </VerticalStackLayout>
         </HorizontalStackLayout>
         <Button AbsoluteLayout.LayoutBounds="700, 210, 100, 50"
                 Text="Hinzufügen"
@@ -111,7 +113,9 @@
         </Button>
         <Button Text=" Custom Modul erstellen"
                 Style="{StaticResource ButtonS}"
-                AbsoluteLayout.LayoutBounds="530, 450">
+                AbsoluteLayout.LayoutBounds="530, 450"
+                Command="{Binding CreateCustomModuleCommand}"
+                IsEnabled="True">
             
         </Button>
 

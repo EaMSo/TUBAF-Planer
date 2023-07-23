@@ -25,7 +25,8 @@ public static class MauiProgram
 		builder.Services.AddTransient<PlanViewModel>();
 		builder.Services.AddTransient<ModulDetailViewModel>();
 		builder.Services.AddTransient<ModulDetailPage>();	
-		builder.UseMauiCompatibility();
+		builder.Services.AddSingleton<PlanBuilderViewModel>();
+		builder.Services.AddSingleton<PlanbuilderPage>();
 
 		return builder.Build();
 	}
