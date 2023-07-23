@@ -27,7 +27,7 @@ namespace Modulmethods
             using (var command = connection.CreateCommand())
             {
                 command.CommandText = "INSERT INTO CustomModule (Primärschlüssel, Lehrveranstaltung, Art, Dozenten, Turnus, Raum, Wochentag, Beginn, Ende) VALUES (@a, @b, @c, @d, @e, @f, @g, @h, @i)";
-                command.Parameters.AddWithValue("@a", "#"+GetEntryCount());
+                command.Parameters.AddWithValue("@a", "#"+GetUniqePrimkeyNumber());
                 command.Parameters.AddWithValue("@b", Lehrveranstaltung);
                 command.Parameters.AddWithValue("@c", Art);
                 command.Parameters.AddWithValue("@d", Dozenten);
@@ -40,13 +40,19 @@ namespace Modulmethods
                 command.ExecuteNonQuery();
             }
         }
-        static int GetEntryCount()
+        static int GetUniqePrimkeyNumber()
         {
+            List<string> primliste = SQLMethods.GetPrimaryKeyList("CustomModule");
             var connection = new SqliteConnection($"Data Source={DBWriting.GetDBPath()}");
             using (var command = connection.CreateCommand())
             {
                 command.CommandText = "SELECT COUNT(*) FROM CustomModule";
-                return Convert.ToInt32(command.ExecuteScalar());
+                int anzahl = Convert.ToInt32(command.ExecuteScalar());
+                while (primliste.Contains("#"+anzahl))
+                {
+                    anzahl++;
+                }
+                return anzahl;
             }
         }
         static void DeleteModuleByPrimäryKey(string Primärschlüssel)
