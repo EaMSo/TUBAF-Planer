@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace Modulmethods
 {
-    class CustomModule
+    class CustomModule : Modul
     {
         const string TableName = "CustomModule";
 
-        public const uint EarliestStartTime = 450; // entspricht 7:30
-        public const uint LatestEndTime = 1170; // 19:30
-        public const uint TableHeight = 800; // Höhe der Plantabelle
+        new public const uint EarliestStartTime = 450; // entspricht 7:30
+        new public const uint LatestEndTime = 1170; // 19:30
+        new public const uint TableHeight = 800; // Höhe der Plantabelle
         private string coursename;
         private string? turnus;
         private string type;
@@ -24,7 +24,7 @@ namespace Modulmethods
         private string? start;
         private string? end;
 
-        public CustomModule(string Primkey)
+        public CustomModule(string Primkey) : base(Primkey)
         {
             
             //if(SQLMethods.GetRoom(Primkey) != null)
@@ -103,70 +103,70 @@ namespace Modulmethods
                 command.ExecuteNonQuery();
             }
         }
-        public string Coursename
+        new public string Coursename
         {
             get
             {
                 return coursename;
             }
         }
-        public string? Turnus
+        new public string? Turnus
         {
             get
             {
                 return turnus;
             }
         }
-        public string Type
+        new public string Type
         {
             get
             {
                 return type;
             }
         }
-        public string Weekday
+        new public string Weekday
         {
             get
             {
                 return weekday;
             }
         }
-        public string Lecturer
+        new public string Lecturer
         {
             get
             {
                 return lecturer;
             }
         }
-        public string? Room
+        new public string? Room
         {
             get
             {
                 return room;
             }
         }
-        public string? Start
+        new public string? Start
         {
             get
             {
                 return start;
             }
         }
-        public string? End
+        new public string? End
         {
             get
             {
                 return end;
             }
         }
-        public string Size
+        new public string Size
         {
             get
             {
                 return "60";
             }
         }
-        public string DayColumn //Modul in die richtige SPalte einordnen
+        new public string DayColumn //Modul in die richtige SPalte einordnen
         {
             get
             {
@@ -203,7 +203,7 @@ namespace Modulmethods
                 return i.ToString();
             }
         }
-        public string TurnusColumnSpan
+        new public string TurnusColumnSpan
         {
             get
             {
@@ -219,7 +219,7 @@ namespace Modulmethods
                 }
             }
         }
-        public string TimeRowStart
+        new public string TimeRowStart
         {
             get
             {
