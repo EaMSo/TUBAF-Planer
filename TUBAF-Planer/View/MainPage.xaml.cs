@@ -19,7 +19,7 @@ public partial class MainPage : ContentPage
 		
 
 		CustomModule.CreateTable();
-
+		/*
 		List<Modul> fullmodulelist = FullmoduleList.GetFullmoduleList();
 		string modulstring = "";
 		foreach(Modul modul in fullmodulelist)
@@ -28,7 +28,7 @@ public partial class MainPage : ContentPage
 		}
 		
 		But.Text = modulstring;
-		
+		*/
 
     }
 
