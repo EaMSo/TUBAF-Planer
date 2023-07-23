@@ -5,16 +5,17 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+#nullable enable
 
 namespace Modulmethods
 {
-    class CustomModule : Modul
+    class CustomModule : Abstractmodul
     {
         const string TableName = "CustomModule";
 
-        new public const uint EarliestStartTime = 450; // entspricht 7:30
-        new public const uint LatestEndTime = 1170; // 19:30
-        new public const uint TableHeight = 800; // Höhe der Plantabelle
+        public const uint EarliestStartTime = 450; // entspricht 7:30
+        public const uint LatestEndTime = 1170; // 19:30
+        public const uint TableHeight = 800; // Höhe der Plantabelle
         private string coursename;
         private string? turnus;
         private string type;
@@ -103,70 +104,70 @@ namespace Modulmethods
                 command.ExecuteNonQuery();
             }
         }
-        new public string Coursename
+        public string Coursename
         {
             get
             {
                 return coursename;
             }
         }
-        new public string? Turnus
+        public string? Turnus
         {
             get
             {
                 return turnus;
             }
         }
-        new public string Type
+        public string Type
         {
             get
             {
                 return type;
             }
         }
-        new public string Weekday
+        public string Weekday
         {
             get
             {
                 return weekday;
             }
         }
-        new public string Lecturer
+        public string Lecturer
         {
             get
             {
                 return lecturer;
             }
         }
-        new public string? Room
+        public string? Room
         {
             get
             {
                 return room;
             }
         }
-        new public string? Start
+        public string? Start
         {
             get
             {
                 return start;
             }
         }
-        new public string? End
+        public string? End
         {
             get
             {
                 return end;
             }
         }
-        new public string Size
+        public string Size
         {
             get
             {
                 return "60";
             }
         }
-        new public string DayColumn //Modul in die richtige SPalte einordnen
+        public string DayColumn //Modul in die richtige SPalte einordnen
         {
             get
             {
@@ -203,7 +204,7 @@ namespace Modulmethods
                 return i.ToString();
             }
         }
-        new public string TurnusColumnSpan
+        public string TurnusColumnSpan
         {
             get
             {
@@ -219,7 +220,7 @@ namespace Modulmethods
                 }
             }
         }
-        new public string TimeRowStart
+        public string TimeRowStart
         {
             get
             {

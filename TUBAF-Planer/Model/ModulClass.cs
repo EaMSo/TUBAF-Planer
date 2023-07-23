@@ -1,10 +1,11 @@
 using Microsoft.Data.Sqlite;
 using Microsoft.VisualBasic;
 
+#nullable enable
 
 namespace Modulmethods
 {
-    public class Modul 
+    public class Modul : Abstractmodul
     {
         const string Tablename = "Module";
 
@@ -20,7 +21,7 @@ namespace Modulmethods
         private string? start;
         private string? end;
 
-        public Modul(string Primkey)
+        public Modul(string Primkey) : base(Primkey)
         {
             //if(SQLMethods.GetRoom(Primkey) != null)
             //throw new ArgumentNullException("Modul hat keinen Raum!");
