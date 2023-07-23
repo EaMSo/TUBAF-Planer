@@ -16,19 +16,25 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 		BindingContext = viewModel;
 
+
 		
 
 		CustomModule.CreateTable();
-		/*
-		List<Modul> fullmodulelist = FullmoduleList.GetFullmoduleList();
+		/*List<Modul> fullmodulelist = FullmoduleList.GetFullmoduleList();
+
 		string modulstring = "";
 		foreach(Modul modul in fullmodulelist)
 		{
 			modulstring += modul.ToString();
 		}
+
 		
 		But.Text = modulstring;
 		*/
+
+
+
+
 
     }
 
