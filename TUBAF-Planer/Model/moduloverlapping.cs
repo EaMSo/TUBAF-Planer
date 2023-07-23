@@ -1,7 +1,7 @@
 ﻿using Modulmethods;
 namespace TUBAF_Planer.Model
 {
-    class Moduloverlapping
+    public class Moduloverlapping
     {
         //Method that looks if a specific module is at the same time span on the same day and turnus like a list of modules if yes it returns true if not it returns false
         public bool AnotherModuleIsAtSameTime(Modul testmodul, List<Modul> modullist)
