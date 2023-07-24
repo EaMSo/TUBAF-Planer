@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:model="clr-namespace:Modulmethods"
              xmlns:viewmodel="clr-namespace:TUBAFPlaner.ViewModel"
-             x:DataType="viewmodel:PlanViewModel"             
+             x:DataType="viewmodel:PlanBuilderViewModel"
              x:Class="TUBAF_Planer.MainPage"
              Style="{StaticResource BackColor}">
 
@@ -59,7 +59,7 @@
               HeightRequest="800"
               WidthRequest="1800"
               BackgroundColor="{StaticResource ListBackColorDark }"
-              BindableLayout.ItemsSource="{Binding Modules}">
+              BindableLayout.ItemsSource="{Binding Plan}">
             <BindableLayout.ItemTemplate>
                 <DataTemplate x:DataType="model:Modul">
                     <Frame Padding="2"
@@ -72,7 +72,7 @@
                            BackgroundColor="{AppThemeBinding Light={StaticResource BackColorPrimary}, Dark={StaticResource BackColorPrimaryDark}}">
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer CommandParameter="{Binding .}"
-                                                  Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PlanViewModel}}, Path=GoToPlanDetailsCommand}"/>
+                                                  Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PlanBuilderViewModel}}, Path=GoToPlanDetailsCommand}"/>
                         </Frame.GestureRecognizers>
                         <VerticalStackLayout>
                             <Label Text="{Binding Coursename}"
