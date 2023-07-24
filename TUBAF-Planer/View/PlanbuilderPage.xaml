@@ -23,11 +23,10 @@
         <StackLayout AbsoluteLayout.LayoutBounds="10, 60, 300, 1500">
             <SearchBar Placeholder="Filtern" x:Name="searchBar" TextChanged="OnSearchTextChanged"/>
             <Label  Text="Module"
-                    TextColor="DeepSkyBlue"
                     FontSize="25"
                     FontAttributes="Bold"
                     HorizontalOptions="Center"/>
-            <CollectionView HeightRequest="300"
+            <CollectionView HeightRequest="350"
                             WidthRequest="300"
                             Style="{StaticResource ListBack}"
                             ItemsSource="{Binding Module}"
@@ -47,17 +46,12 @@
                 </CollectionView.ItemTemplate>
                 
             </CollectionView>
-            
-            <!-- not implemented-->
-
-
-            
+          
             <Label  Text="Eigene Module"
-                    TextColor="DeepSkyBlue"
                     FontSize="25"
                     FontAttributes="Bold"
                     HorizontalOptions="Center"/>
-                <CollectionView HeightRequest="300"
+                <CollectionView HeightRequest="350"
                             WidthRequest="300"
                             Style="{StaticResource ListBack}"
                             ItemsSource="{Binding CustomModules}"
