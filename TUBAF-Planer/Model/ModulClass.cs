@@ -3,7 +3,7 @@
 
 namespace Modulmethods
 {
-    public class Modul : Abstractmodul
+    public class Modul
     {
         const string Tablename = "Module";
 
@@ -19,7 +19,7 @@ namespace Modulmethods
         protected string? start;
         protected string? end;
 
-        public Modul(string Primkey, string Tablename = Tablename) : base(Primkey)
+        public Modul(string Primkey, string Tablename = Tablename)
         {
             this.coursename = SQLMethods.GetCourseName(Primkey, Tablename);
             if(SQLMethods.GetTurnus(Primkey, Tablename) != null)
@@ -104,8 +104,16 @@ namespace Modulmethods
         {
             get
             {
-                return "60";
+                return Convert.ToString(GetTime(this.end)-GetTime(this.start));
             }
+        }
+        static int GetTime(string? Time)
+        {
+            uint TimeDiff = LatestEndTime - EarliestStartTime;
+            string[] Spaltzeit = Time.Split(':');
+            uint StartTime = Convert.ToUInt32(Spaltzeit[0]) * 60 + Convert.ToUInt32(Spaltzeit[1]);
+            StartTime = StartTime - EarliestStartTime;
+            return Convert.ToInt32(Math.Round(StartTime * ((double)TableHeight / TimeDiff), MidpointRounding.ToEven));
         }
         public string DayColumn //Modul in die richtige Spalte einordnen
         {
