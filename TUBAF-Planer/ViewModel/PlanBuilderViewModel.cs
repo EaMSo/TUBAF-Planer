@@ -100,10 +100,92 @@ public partial class PlanBuilderViewModel : BaseViewModel
     {
         SelectedModules.Add(CurrentModule);
     }
-
+    //Check if the Coursname is to long (max 50 characters)
+    bool CheckForCoursname()
+    {
+        if (Ecoursename.Length > 50)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+    //Check if the Type is valid
     bool CheckForType()
     {
-        //Etype;
-        return true;
+        if(Etype == "Vorlesung" || Etype == "Übung" || Etype == "Praktikum" || Etype == "Seminar" || Etype == "Kolloquium" || Etype == "Blockkurs")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    //Check if the Lecturer is to long (max 50 characters)
+    bool CheckForLecturer()
+    {
+        if (Electurer.Length > 50)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+    //Check if the Room is to long (max 50 characters)
+    bool CheckForRoom()
+    {
+        if (Eroom.Length > 50)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+    //Check if the Weekday is valid
+    bool CheckForWeekday()
+    {
+        if (Eweekday == "Montag" || Eweekday == "Dienstag" || Eweekday == "Mittwoch" || Eweekday == "Donnerstag" || Eweekday == "Freitag" || Eweekday == "Samstag" || Eweekday == "Sonntag")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    //Check if the Turnus is valid
+    bool CheckforTurnus()
+    {
+        if (Eturnus == "wöchentlich" || Eturnus == "ungrade Woche" || Eturnus == "grade Woche")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    //Check if the Start and End time is valid
+    bool IsTimeValid()
+    {
+        // Define the expected time format
+        string timeFormat = "H:mm";
+        // Parse the start and end times into DateTime objects using the specified format
+        if (DateTime.TryParseExact(Estart, timeFormat, null, System.Globalization.DateTimeStyles.None, out DateTime startTimeObj) &&
+            DateTime.TryParseExact(Eend, timeFormat, null, System.Globalization.DateTimeStyles.None, out DateTime endTimeObj))
+        {
+            if (startTimeObj < endTimeObj)
+            {
+                return true;
+            }
+        }
+        return false; // Invalid time range/ format
     }
 }

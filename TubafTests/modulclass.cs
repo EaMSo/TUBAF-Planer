@@ -1,12 +1,31 @@
-﻿using Modulmethods;
-namespace TUBAF_Planer.Model
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TubafTests
 {
-    public class Moduloverlapping
+    // Mockmodul for testing
+
+    public class Modul
     {
-        //Method that looks if a specific module is at the same time span on the same day and turnus like a list of modules if yes it returns true if not it returns false
-        public bool AnotherModuleIsAtSameTime(Modul testmodul, List<Modul> modullist)
+        public int PrimaryKey { get; private set; }
+        public string Weekday { get; private set; }
+        public string Start { get; private set; }
+        public string End { get; private set; }
+        public string Turnus { get; private set; }
+
+        public Modul(int primaryKey, string weekday, string start, string end, string turnus)
         {
-            // Check if the otherModule overlaps with any module in the modullist
+            PrimaryKey = primaryKey;
+            Weekday = weekday;
+            Start = start;
+            End = end;
+            Turnus = turnus;
+        }
+        public static bool AnotherModuleIsAtSameTime(Modul testmodul, List<Modul> modullist)
+        {
             foreach (var module in modullist)
             {
                 // Skip comparing the otherModule with itself
