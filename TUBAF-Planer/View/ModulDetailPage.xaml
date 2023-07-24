@@ -5,7 +5,7 @@
              xmlns:viewmodel="clr-namespace:TUBAFPlaner.ViewModel"
              x:DataType="viewmodel:ModulDetailViewModel"
              Title="{Binding Modul.Coursename}">
-    <VerticalStackLayout>
+    <VerticalStackLayout WidthRequest="500">
         <Label 
             Text="{Binding Modul.Coursename}"/>
         <Label 

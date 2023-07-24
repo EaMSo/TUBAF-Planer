@@ -1,17 +1,25 @@
 ﻿using Modulmethods;
+using System.Collections.ObjectModel;
+
 namespace TUBAF_Planer.Model
 {
     public class Moduloverlapping
     {
         //Method that looks if a specific module is at the same time span on the same day and turnus like a list of modules if yes it returns true if not it returns false
-        public bool AnotherModuleIsAtSameTime(Modul testmodul, List<Modul> modullist)
+        public static bool AnotherModuleIsAtSameTime(Modul testmodul, ObservableCollection<Modul> modullist, out string OverlapName)
         {
+            if(modullist.Count == 0)
+            {
+                OverlapName = "";
+                return false;
+            }
             // Check if the otherModule overlaps with any module in the modullist
             foreach (var module in modullist)
             {
                 // Skip comparing the otherModule with itself
                 if (ReferenceEquals(module, testmodul))
                 {
+                    OverlapName = "";
                     return true;
                 }
                 if (testmodul.Weekday == null)
@@ -40,10 +48,12 @@ namespace TUBAF_Planer.Model
                     if ((moduleStartTime < otherModuleEndTime && moduleEndTime > otherModuleStartTime) ||
                         (otherModuleStartTime < moduleEndTime && otherModuleEndTime > moduleStartTime))
                     {
+                        OverlapName = module.Coursename;
                         return true; // Overlap found
                     }
                 }
             }
+            OverlapName = "";
             return false; // No overlap found
         }
     }

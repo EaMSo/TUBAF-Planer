@@ -154,7 +154,7 @@
                             <Frame.GestureRecognizers>
                                 <TapGestureRecognizer CommandParameter="{Binding .}"
                                                       Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PlanBuilderViewModel}}, Path=DisplayModuleCommand}">
-                            
+
                                 </TapGestureRecognizer>
                             </Frame.GestureRecognizers>
                             <Label Text="{Binding Coursename}"/>
@@ -165,11 +165,11 @@
 
 
         </VerticalStackLayout>
-        <!-- not implemented-->
         <Button Text="Plan generieren"
                 AbsoluteLayout.LayoutBounds="1230, 800"
                 Style="{StaticResource ButtonS}"
-                Command="{Binding GeneratePlanCommand}">
+                Command="{Binding GeneratePlanCommand}"
+                IsEnabled="{Binding IsNotBusy}">
             
         </Button>
         <Button Text=" Custom Modul erstellen"
@@ -178,6 +178,13 @@
                 Command="{Binding CreateCustomModuleCommand}"
                 IsEnabled="{Binding IsNotBusy}">
             
+        </Button>
+        <Button Text=" Custom Modul löschen"
+                Style="{StaticResource ButtonS}"
+                AbsoluteLayout.LayoutBounds="530, 520"
+                Command="{Binding DeleteCustomModuleCommand}"
+                IsEnabled="{Binding IsNotBusy}">
+
         </Button>
 
 

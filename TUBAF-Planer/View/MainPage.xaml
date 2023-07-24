@@ -81,7 +81,19 @@
                                    HeightRequest="20"/>
                             <Label Text="{Binding Room}"
                                    HorizontalOptions="Start"
-                                   Style="{StaticResource SmallLabel}"/>
+                                   Style="{StaticResource SmallLabel}"
+                                   HeightRequest="20"/>
+                            <HorizontalStackLayout>
+                                <Label HorizontalOptions="Start"
+                                       Style="{StaticResource SmallLabel}"
+                                       Text="{Binding Start}"/>
+                                <Label HorizontalOptions="Start"
+                                       Style="{StaticResource SmallLabel}"
+                                       Text=" - "/>
+                                <Label HorizontalOptions="Start"
+                                       Style="{StaticResource SmallLabel}"
+                                       Text="{Binding End}"/>
+                            </HorizontalStackLayout>
                         </VerticalStackLayout>
                     </Frame>
                 </DataTemplate>
