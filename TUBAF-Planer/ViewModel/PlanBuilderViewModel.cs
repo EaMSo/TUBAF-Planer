@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Modulmethods;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Reflection;
 using TUBAF_Planer.Model;
@@ -78,6 +79,11 @@ public partial class PlanBuilderViewModel : BaseViewModel
             if(Module.Count > 0)
             {
                 Module.Clear();
+            }
+
+            if (CustomModules.Count > 0)
+            {
+                CustomModules.Clear();
             }
 
 
@@ -168,6 +174,11 @@ public partial class PlanBuilderViewModel : BaseViewModel
             await Shell.Current.DisplayAlert("Fehler", "Zeit muss zwischen 7:30 und 19:30 liegen", "OK");
             return;
         }
+        if(!ECheckForExistingModule())
+        {
+            await Shell.Current.DisplayAlert("Fehler", "Custom Modul mit diesem Name existiert bereits", "OK");
+            return;
+        }
 
         IsBusy = true;
         string key = CustomModule.CreateCustomModule(Ecoursename, Etype, Electurer, Eturnus, Eroom, Eweekday, Estart, Eend);
@@ -180,10 +191,21 @@ public partial class PlanBuilderViewModel : BaseViewModel
     [RelayCommand]
     void DeleteCustomModule()
     {
-        foreach(var module in CustomModules)
+        CustomModule.DeleteModule(CurrentModule.Coursename);
+        List<CustomModule> list = new();
+        foreach (CustomModule modul in CustomModules)
         {
-            //if(E)
+            if (modul.Coursename == CurrentModule.Coursename)
+            { 
+                list.Add(modul);
+            }
         }
+        //zweite Schleife, da man in der oberen nicht Entfernen kann
+        foreach (CustomModule modul in list)
+        {
+            CustomModules.Remove(modul);
+        }
+        
     }
 
 
@@ -236,6 +258,16 @@ public partial class PlanBuilderViewModel : BaseViewModel
             return;
         }
         SelectedModules.Add(CurrentModule);
+    }
+
+    [RelayCommand]
+    void RemoveFromSelectedList()
+    {
+        if(!SelectedModules.Contains(CurrentModule))
+        {
+            return;
+        }
+        SelectedModules.Remove(CurrentModule);
     }
 
     [RelayCommand]
@@ -446,5 +478,16 @@ public partial class PlanBuilderViewModel : BaseViewModel
             return true;
         }
         return false;
+    }
+    bool ECheckForExistingModule()
+    {
+        foreach(CustomModule modul in CustomModules)
+        {
+            if(modul.Coursename == Ecoursename)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 }

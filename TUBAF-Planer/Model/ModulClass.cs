@@ -143,6 +143,29 @@ namespace Modulmethods
                 return Convert.ToString(Math.Round(StartTimeDiff * ((double)TableHeight / TimeDiff), MidpointRounding.ToEven));
             }
         }
+        public string Farbe
+        {
+            get
+            {
+                switch (type)
+                {
+                    case "Übung":
+                        return "#00EE76";
+                    case "Vorlesung":
+                        return "Aqua";
+                    case "Seminar":
+                        return "#1E90FF";
+                    case "Praktikum":
+                        return "#FF0000";
+                    case "Blockkurs":
+                        return "#DAA520";
+                    case "Kolloquium":
+                        return "#EEAEEE";
+                    default:
+                        return "#8B008B";
+                }
+            }
+        }
         public static int GetTime(string Time)
         {
             
