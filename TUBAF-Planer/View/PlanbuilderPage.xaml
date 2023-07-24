@@ -5,11 +5,12 @@
              xmlns:viewmodel="clr-namespace:TUBAFPlaner.ViewModel"
              x:DataType="viewmodel:PlanBuilderViewModel"
              xmlns:model="clr-namespace:Modulmethods"
-             Style="{StaticResource BackColor}">
+             Style="{StaticResource BackColor}"
+             x:Name="page">
     <AbsoluteLayout>
         <!-- not implemented-->
         <Entry AbsoluteLayout.LayoutBounds="10, 0, 300, 50"
-               Placeholder="Studiengang">
+               Placeholder="Noch nicht Implementiert">
             
         </Entry>
         <Button Text="Module suchen"
@@ -20,10 +21,12 @@
             
         </Button>
         <StackLayout AbsoluteLayout.LayoutBounds="10, 60, 300, 1500">
-            <!-- not implemented-->
-            <SearchBar Placeholder="Module">
-
-            </SearchBar>
+            <SearchBar Placeholder="Filtern" x:Name="searchBar" TextChanged="OnSearchTextChanged"/>
+            <Label  Text="Module"
+                    TextColor="DeepSkyBlue"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"/>
             <CollectionView HeightRequest="300"
                             WidthRequest="300"
                             Style="{StaticResource ListBack}"
@@ -46,13 +49,19 @@
             </CollectionView>
             
             <!-- not implemented-->
-            <SearchBar Placeholder="eigene Module">
 
-            </SearchBar>
-            <CollectionView HeightRequest="300"
+
+            
+            <Label  Text="Eigene Module"
+                    TextColor="DeepSkyBlue"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"/>
+                <CollectionView HeightRequest="300"
                             WidthRequest="300"
                             Style="{StaticResource ListBack}"
-                            ItemsSource="{Binding CustomModules}">
+                            ItemsSource="{Binding CustomModules}"
+                            x:Name="Custommodulcollection">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Modul">
                         <Frame Style="{StaticResource FrameS}">

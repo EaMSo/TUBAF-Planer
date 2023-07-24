@@ -89,14 +89,14 @@ public partial class PlanBuilderViewModel : BaseViewModel
 
             IsBusy = true;
 
-            /*
+            
             List<Modul> fullmodules = FullmoduleList.GetFullmoduleList();
 
             foreach (Modul mod in fullmodules)
             {
                 Module.Add(mod);
             }
-            */
+            
             
             List<CustomModule> customModules = FullmoduleList.GetFullCustomList();
 
