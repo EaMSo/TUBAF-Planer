@@ -10,16 +10,16 @@ namespace Modulmethods
         public const uint EarliestStartTime = 450; // entspricht 7:30
         public const uint LatestEndTime = 1170; // 19:30
         public const uint TableHeight = 800; // Höhe der Plantabelle
-        private string coursename;
-        private string? turnus;
-        private string type;
-        private string weekday;
-        private string lecturer;
-        private string? room;
-        private string? start;
-        private string? end;
+        protected string coursename;
+        protected string? turnus;
+        protected string type;
+        protected string weekday;
+        protected string lecturer;
+        protected string? room;
+        protected string? start;
+        protected string? end;
 
-        public Modul(string Primkey) : base(Primkey)
+        public Modul(string Primkey, string Tablename = Tablename) : base(Primkey)
         {
             this.coursename = SQLMethods.GetCourseName(Primkey, Tablename);
             if(SQLMethods.GetTurnus(Primkey, Tablename) != null)

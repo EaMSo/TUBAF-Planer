@@ -9,11 +9,10 @@ namespace TUBAF_Planer;
 public partial class MainPage : ContentPage
 {
 
-	public MainPage(PlanViewModel viewModel)
+	public MainPage(PlanBuilderViewModel viewModel)
 	{
 		InitializeComponent();
 		BindingContext = viewModel;
-
     }	
 }
 

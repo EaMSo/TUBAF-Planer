@@ -25,19 +25,40 @@ public partial class PlanBuilderViewModel : BaseViewModel
     [ObservableProperty]
     string eend;
     public ObservableCollection<Modul> Module { get; set; }
-    public ObservableCollection<Modul> CustomModules { get; set; }
+    public ObservableCollection<CustomModule> CustomModules { get; set; }
     public ObservableCollection<Modul> SelectedModules { get; set; }
     [ObservableProperty]
     Modul currentModule;
+
+    public ObservableCollection<Modul> Plan { get; set; }
 
     public PlanBuilderViewModel() 
     {
         this.Module = new();
         this.SelectedModules = new();
+        this.CustomModules = new();
+        this.Plan = new();
+        Plan.Add(new Modul("#SPLUS20068D"));
+    }
+
+
+    [RelayCommand]
+    async Task GoToPlanDetailsAsync(Modul modul)
+    {
+        if (modul is null)
+        {
+            return;
+        }
+
+        await Shell.Current.GoToAsync($"{nameof(TUBAF_Planer.View.ModulDetailPage)}", true,
+            new Dictionary<string, object>
+            {
+                {"Modul", modul }
+            });
     }
 
     [RelayCommand]
-    void LoadModules()
+    public void LoadModules()
     {
         Task.Run(() =>
         {
@@ -83,14 +104,14 @@ public partial class PlanBuilderViewModel : BaseViewModel
         IsBusy = false;
     }
 
-
+ 
     [RelayCommand]
     void CreateCustomModule() 
     {
         IsBusy = true;
         string key = CustomModule.CreateCustomModule(Ecoursename, Etype, Electurer, Eturnus, Eroom, Eweekday, Estart, Eend);
-
-        // to do 
+        CustomModules.Add(new CustomModule(key));
+     
 
         IsBusy = false;
     }
@@ -100,6 +121,17 @@ public partial class PlanBuilderViewModel : BaseViewModel
     {
         SelectedModules.Add(CurrentModule);
     }
+
+    [RelayCommand]
+    public void GeneratePlan()
+    {
+        foreach (var module in SelectedModules) 
+        {
+            Plan.Add(module);
+        }
+    }
+
+
     //Check if the Coursname is to long (max 50 characters)
     bool CheckForCoursname()
     {

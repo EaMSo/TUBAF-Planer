@@ -168,7 +168,8 @@
         <!-- not implemented-->
         <Button Text="Plan generieren"
                 AbsoluteLayout.LayoutBounds="1230, 800"
-                Style="{StaticResource ButtonS}">
+                Style="{StaticResource ButtonS}"
+                Command="{Binding GeneratePlanCommand}">
             
         </Button>
         <Button Text=" Custom Modul erstellen"
