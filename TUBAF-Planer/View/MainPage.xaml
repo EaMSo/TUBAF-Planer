@@ -68,8 +68,7 @@
                            Grid.Row="{Binding TimeRowStart}"
                            VerticalOptions="Start"
                            HeightRequest="{Binding Size}"
-                           BorderColor="{AppThemeBinding Light={StaticResource LabelTextDark}, Dark={StaticResource LabelText}}"
-                           BackgroundColor="{AppThemeBinding Light={StaticResource BackColorPrimary}, Dark={StaticResource BackColorPrimaryDark}}">
+                           Style="{StaticResource FrameS}">
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer CommandParameter="{Binding .}"
                                                   Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PlanBuilderViewModel}}, Path=GoToPlanDetailsCommand}"/>
@@ -81,7 +80,19 @@
                                    HeightRequest="20"/>
                             <Label Text="{Binding Room}"
                                    HorizontalOptions="Start"
-                                   Style="{StaticResource SmallLabel}"/>
+                                   Style="{StaticResource SmallLabel}"
+                                   HeightRequest="20"/>
+                            <HorizontalStackLayout HeightRequest="20">
+                                <Label HorizontalOptions="Start"
+                                       Style="{StaticResource SmallLabel}"
+                                       Text="{Binding Start}"/>
+                                <Label HorizontalOptions="Start"
+                                       Style="{StaticResource SmallLabel}"
+                                       Text=" - "/>
+                                <Label HorizontalOptions="Start"
+                                       Style="{StaticResource SmallLabel}"
+                                       Text="{Binding End}"/>
+                            </HorizontalStackLayout>
                         </VerticalStackLayout>
                     </Frame>
                 </DataTemplate>

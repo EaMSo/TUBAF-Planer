@@ -64,13 +64,14 @@ namespace Modulmethods
                 return "#"+ anzahl.ToString();
             }
         }
-        static public void DeleteModuleByPrimäryKey(string Primärschlüssel)
+        static public void DeleteModule(string Coursename)
         {
             var connection = new SqliteConnection($"Data Source={DBWriting.GetDBPath()}");
             using (var command = connection.CreateCommand())
             {
-                command.CommandText = "DELETE FROM CustomModule WHERE Primärschlüssel = @a";
-                command.Parameters.AddWithValue("@a", Primärschlüssel);
+                connection.Open();
+                command.CommandText = "DELETE FROM CustomModule WHERE Lehrveranstaltung = @a";
+                command.Parameters.AddWithValue("@a", Coursename);
                 command.ExecuteNonQuery();
             }
         }

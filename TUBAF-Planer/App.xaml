@@ -47,6 +47,11 @@
                 <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource BackColorPrimary}, Dark={StaticResource BackColorPrimaryDark}}"/>
                 <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LabelText}, Dark={StaticResource LabelTextDark}}"/>
             </Style>
+
+            <Style x:Key="FrameS" TargetType="Frame">
+                <Setter Property="BorderColor" Value="{AppThemeBinding Light={StaticResource LabelTextDark}, Dark={StaticResource LabelText}}"/>
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource BackColorPrimary}, Dark={StaticResource BackColorPrimaryDark}}"/>
+            </Style>
     
 
             
