@@ -19,7 +19,7 @@ namespace TUBAF_Planer.Model
                 // Skip comparing the otherModule with itself
                 if (ReferenceEquals(module, testmodul))
                 {
-                    OverlapName = "";
+                    OverlapName = testmodul.Coursename;
                     return true;
                 }
                 if (testmodul.Weekday == null)

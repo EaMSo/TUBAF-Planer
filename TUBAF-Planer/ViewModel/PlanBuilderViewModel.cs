@@ -275,11 +275,15 @@ public partial class PlanBuilderViewModel : BaseViewModel
     [RelayCommand]
     void RemoveFromSelectedList()
     {
-        if(!SelectedModules.Contains(CurrentModule))
+       
+        foreach(Modul modul in SelectedModules)
         {
-            return;
+            if(modul.Coursename == CurrentModule.Coursename && modul.Start == CurrentModule.Start)
+            {
+                SelectedModules.Remove(modul);
+                return;
+            }
         }
-        SelectedModules.Remove(CurrentModule);
     }
 
     [RelayCommand]
