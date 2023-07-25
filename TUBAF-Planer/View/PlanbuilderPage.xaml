@@ -180,7 +180,7 @@
 
         </VerticalStackLayout>
         <Button Text="Plan generieren"
-                AbsoluteLayout.LayoutBounds="1230, 800"
+                AbsoluteLayout.LayoutBounds="1230, 800,300,50"
                 Style="{StaticResource ButtonS}"
                 Command="{Binding GeneratePlanCommand}"
                 IsEnabled="{Binding IsNotBusy}">
