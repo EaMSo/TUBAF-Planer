@@ -1,17 +1,18 @@
 # TUBAF-Planer
 Automatisch generierter Modul-Wochenplan für die Technische Universität Bergakademie Freiberg
 ## Generelle Funktionen der Wochenplananwendung
-- liest die benötigten Daten aus einer Datenbank aus
-- Generiert einen personalisierten Wochenplan für jeden Studenten basierend auf seinem Studienfach und Semester (welches er vorher angibt aber nicht muss (Preset))
--> Berücksichtigt die Vorlesungszeiten, Pausen und individuellen Präferenzen 
-- bei nur Angabe des Studienfachs kann der User sich frei aus allen Modulen einen Wochenplan erstellen
-- wenn es zeitliche Überlappungen bei der Zusammenstellung gibt wird der User gewarnt
-- Einträge in dem Wochenplan können individualisiert werden
-- Fertiger Wochenplan kann als PDF abgespeichert werden oder innerhalb des Programms... (oder in einer Kalenderfunktion angesehen werden) --optional
+- liest die benötigten Daten aus einer Datenbank aus ✔️
+- Generiert einen personalisierten Wochenplan für jeden Studenten basierend auf seinem Studienfach und Semester (welches er vorher angibt aber nicht muss (Preset)) ❌
+-> Berücksichtigt die Vorlesungszeiten, Pausen und individuellen Präferenzen ✔️
+- bei nur Angabe des Studienfachs kann der User sich frei aus allen Modulen einen Wochenplan erstellen ✔️
+- wenn es zeitliche Überlappungen bei der Zusammenstellung gibt wird der User gewarnt ✔️
+- Einträge in dem Wochenplan können individualisiert werden ✔️
+- Fertiger Wochenplan kann als PDF abgespeichert werden oder innerhalb des Programms...  (oder in einer Kalenderfunktion angesehen werden) --optional 🟨
 ## Weiteres Vorgehen
-- wärend der Entwicklung des Programms werden auch noch weitere Features realisiert (wenn es sich anbietet)
+- wärend der Entwicklung des Programms werden auch noch weitere Features realisiert (wenn es sich anbietet) ✔️
 ## Porten?
 - wenn die Software auf einem Computer funktioniert wäre es vorstellbar sie auch auf Android und IOS zu Porten (und eventuell auch auf eine Website)
+
 ## Schwierigkeiten beim Testen
    Wie sich herausgestellt hat ist XUnit nicht instande bestimmte Dinge in einem MAUI Projekt sinnvoll zu Testen siehe [hier](https://learn.microsoft.com/en-us/answers/questions/1190946/cant-use-microsoft-maui-storage-preferences-in-uni).
    Wir haben probiert die Lösung, die dort beschrieben wird und viele andere zu Implementieren, aber es funktionierte nicht. Der Fehler beim Testen kann reproduziert werden, wenn der auskommentierte Code in Unittest1 beim Testen benutzt wird. 
