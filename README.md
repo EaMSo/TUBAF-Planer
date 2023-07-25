@@ -7,7 +7,7 @@ Automatisch generierter Modul-Wochenplan für die Technische Universität Bergak
 - ~bei nur Angabe des Studienfachs kann~ der User kann sich frei aus allen Modulen einen Wochenplan erstellen ✔️
 - wenn es zeitliche Überlappungen bei der Zusammenstellung gibt wird der User gewarnt ✔️
 - Einträge in dem Wochenplan können individualisiert werden ✔️
-- Fertiger Wochenplan kann ~als PDF abgespeichert werden~ mit dem snipping Tool genippt werden oder innerhalb des Programms angekuckt werden (oder in einer Kalenderfunktion angesehen werden) --optional 🟨
+- Fertiger Wochenplan kann ~als PDF abgespeichert werden~ mit dem snipping Tool genippt werden oder innerhalb des Programms angekuckt werden ~(oder in einer Kalenderfunktion angesehen werden) --optional~ 🟨
 ## Weiteres Vorgehen
 - wärend der Entwicklung des Programms werden auch noch weitere Features realisiert (wenn es sich anbietet) ✔️
 ## Porten?
