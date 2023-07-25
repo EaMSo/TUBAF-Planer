@@ -20,6 +20,12 @@
                 IsEnabled="{Binding IsNotBusy}">
             
         </Button>
+        <Button Text="Datenbankpfad kopieren"
+                AbsoluteLayout.LayoutBounds="320,670"
+                Style="{StaticResource ButtonS}"
+                Command="{Binding DatenbankpfadCommand}">
+
+        </Button>
         <StackLayout AbsoluteLayout.LayoutBounds="10, 60, 300, 1500">
             <SearchBar Placeholder="Filtern" x:Name="searchBar" TextChanged="OnSearchTextChanged"/>
             <Label  Text="Module"

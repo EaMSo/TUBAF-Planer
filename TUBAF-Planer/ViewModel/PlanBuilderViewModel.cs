@@ -65,7 +65,15 @@ public partial class PlanBuilderViewModel : BaseViewModel
                 {"Modul", modul}
             });
     }
-
+    [RelayCommand]
+    public async void Datenbankpfad()
+    {
+        string databaseName = "TUFreibergModule.db";
+        string databasePath = Path.Combine(FileSystem.AppDataDirectory, databaseName);
+        await Shell.Current.DisplayAlert("Datenbankpfad wurde zu Clipboard kopiert", databasePath, "OK");
+        await Clipboard.Default.SetTextAsync(FileSystem.AppDataDirectory);
+        return;
+    }
     [RelayCommand]
     public void LoadModules()
     {
