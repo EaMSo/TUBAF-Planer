@@ -16,13 +16,13 @@ Automatisch generierter Modul-Wochenplan für die Technische Universität Bergak
    Wie sich herausgestellt hat ist XUnit nicht instande bestimmte Dinge in einem MAUI Projekt sinnvoll zu Testen siehe [hier](https://learn.microsoft.com/en-us/answers/questions/1190946/cant-use-microsoft-maui-storage-preferences-in-uni).
    Wir haben probiert die Lösung, die dort beschrieben wird und viele andere zu Implementieren, aber es funktionierte nicht. Der Fehler beim Testen kann reproduziert werden, wenn der auskommentierte Code in Unittest1 beim Testen benutzt wird. 
    Dazu einfach entkommentieren, speichern und dann "dotnet test" in die Kommandozeile eingeben. Wenn eine einfache Lösung für diesen Fehler existiert würde mich sehr interesieren wie diese geht.   ~Emil Sommer
-  
 
 ## Zusätzlich benutzte Pakete
 - [Microsoft.Data.Sqlite](https://www.nuget.org/packages/Microsoft.Data.Sqlite) (um SQLite als Datenbank nutzen zu können)
 - [Community Toolkit MVVM](https://www.nuget.org/packages/CommunityToolkit.Mvvm) (leichtere Benutzbarkeit von MAUI)
 
-
+## Wiki
+- die Benutzung der Programms wird im Wiki erklärt!
 
 # UML Diagramm erster Programmentwurf
 ![UML Diagramm Entwurf1](http://www.plantuml.com/plantuml/png/fP11IyGm48Nl-HMX9nLwy2eYknGyxUAglo0c8orE4ibC5iJrlnir8McHNhQtcNvvxytR4Al0qQBGg8Zay-Dk3pnwG-9JoFHfxuX3rEp3nQNu4fdRUnCHCZEiCRk9E7DRO_vsYVgPdy3w8vHLGRQ8XrUSzCY3Zu60Miq3AlSI9pGGYla8-ktX207LUnPPzwbYzn5n5lASZBBg3f7Ostb50HHdSr5BbbTzdtkIDp8c8P6dpYhtqVt-xwwxfil4QUzOJOv4ixqzzSjx_bTQGbKY4Ms_9L1zi4QrDyl-T9SJp_VbskmjDk1CjFWD)
