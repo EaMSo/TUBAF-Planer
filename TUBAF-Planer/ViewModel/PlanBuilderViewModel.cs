@@ -65,7 +65,15 @@ public partial class PlanBuilderViewModel : BaseViewModel
                 {"Modul", modul}
             });
     }
-
+    [RelayCommand]
+    public async void Datenbankpfad()
+    {
+        string databaseName = "TUFreibergModule.db";
+        string databasePath = Path.Combine(FileSystem.AppDataDirectory, databaseName);
+        await Shell.Current.DisplayAlert("Datenbankpfad wurde zu Clipboard kopiert", databasePath, "OK");
+        await Clipboard.Default.SetTextAsync(FileSystem.AppDataDirectory);
+        return;
+    }
     [RelayCommand]
     public void LoadModules()
     {
@@ -191,6 +199,10 @@ public partial class PlanBuilderViewModel : BaseViewModel
     [RelayCommand]
     void DeleteCustomModule()
     {
+        if (CurrentModule is null)
+        {
+            return;
+        }
         CustomModule.DeleteModule(CurrentModule.Coursename);
         List<CustomModule> list = new();
         foreach (CustomModule modul in CustomModules)
@@ -284,7 +296,11 @@ public partial class PlanBuilderViewModel : BaseViewModel
     //Check if the Coursname is to long (max 50 characters)
     bool CheckForCoursname()
     {
-        if (CurrentModule.Coursename.Length > 50 || CurrentModule.Coursename.Length < 1)
+        if (CurrentModule is null)
+        {
+            return true;
+        }
+        if (CurrentModule.Coursename.Length > 50 || CurrentModule.Coursename.Length < 1 )
         {
             return false;
         }
@@ -296,7 +312,11 @@ public partial class PlanBuilderViewModel : BaseViewModel
     //Check if the Type is valid
     bool CheckForType()
     {
-        if(CurrentModule.Type == "Vorlesung" || CurrentModule.Type == "Übung" || CurrentModule.Type == "Praktikum" || CurrentModule.Type == "Seminar" || CurrentModule.Type == "Kolloquium" || CurrentModule.Type == "Blockkurs")
+        if (CurrentModule is null)
+        {
+            return false;
+        }
+        if (CurrentModule.Type == "Vorlesung" || CurrentModule.Type == "Übung" || CurrentModule.Type == "Praktikum" || CurrentModule.Type == "Seminar" || CurrentModule.Type == "Kolloquium" || CurrentModule.Type == "Blockkurs")
         {
             return true;
         }
@@ -308,6 +328,10 @@ public partial class PlanBuilderViewModel : BaseViewModel
     //Check if the Lecturer is to long (max 50 characters)
     bool CheckForLecturer()
     {
+        if (CurrentModule is null)
+        {
+            return false;
+        }
         if (CurrentModule.Lecturer.Length > 50)
         {
             return false;
@@ -320,6 +344,10 @@ public partial class PlanBuilderViewModel : BaseViewModel
     //Check if the Room is to long (max 50 characters)
     bool CheckForRoom()
     {
+        if (CurrentModule is null)
+        {
+            return false;
+        }
         if (CurrentModule.Room.Length > 50)
         {
             return false;
@@ -332,6 +360,10 @@ public partial class PlanBuilderViewModel : BaseViewModel
     //Check if the Weekday is valid
     bool CheckForWeekday()
     {
+        if (CurrentModule is null)
+        {
+            return false;
+        }
         if (CurrentModule.Weekday == "Montag" || CurrentModule.Weekday == "Dienstag" || CurrentModule.Weekday == "Mittwoch" || CurrentModule.Weekday == "Donnerstag" || CurrentModule.Weekday == "Freitag" || CurrentModule.Weekday == "Samstag" || CurrentModule.Weekday == "Sonntag")
         {
             return true;
@@ -344,6 +376,10 @@ public partial class PlanBuilderViewModel : BaseViewModel
     //Check if the Turnus is valid
     bool CheckforTurnus()
     {
+        if (CurrentModule is null)
+        {
+            return false;
+        }
         if (CurrentModule.Turnus == "wöchentlich" || CurrentModule.Turnus == "ungerade Woche" || CurrentModule.Turnus == "gerade Woche")
         {
             return true;
@@ -490,4 +526,17 @@ public partial class PlanBuilderViewModel : BaseViewModel
         }
         return true;
     }
+    [RelayCommand]
+    void Clear()
+    {
+        Ecoursename = "";
+        Etype = "";
+        Electurer = "";
+        Eroom = "";
+        Eweekday = "";
+        Eturnus = "";
+        Estart = "";
+        Eend = "";
+    }
+
 }

@@ -6,7 +6,53 @@
              x:DataType="viewmodel:PlanBuilderViewModel"
              x:Class="TUBAF_Planer.MainPage"
              Style="{StaticResource BackColor}">
-
+    <HorizontalStackLayout VerticalOptions="Start">
+        <Grid ColumnDefinitions="*"
+              RowDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*,*"
+              HeightRequest="850"
+              WidthRequest="60"
+              AnchorY="0"
+              Style="{StaticResource StackBackColor}">
+            <Label Text="Tage/Zeit"
+                   HorizontalOptions="Center"
+                   Grid.Row="0"/>
+            <Label Text=""
+                   HorizontalOptions="Center"
+                   Grid.Row="1"/>
+            <Label Text="8:00"
+                   HorizontalOptions="Center"
+                   Grid.Row="2"/>
+            <Label Text="9:45"
+                   HorizontalOptions="Center"
+                   Grid.Row="4"/>
+            <Label Text="11:30"
+                   HorizontalOptions="Center"
+                   Grid.Row="6"/>
+            <Label Text="Mittags-pause 13:00"
+                   HorizontalOptions="Center"
+                   Grid.Row="7"/>
+            <Label Text="14:30"
+                   HorizontalOptions="Center"
+                   Grid.Row="9"/>
+            <Label Text="16:15"
+                   HorizontalOptions="Center"
+                   Grid.Row="11"/>
+            <Label Text="18:00"
+                   HorizontalOptions="Center"
+                   Grid.Row="13"/>
+            <Label Text="Pause"
+                   HorizontalOptions="Center"
+                   Grid.Row="3"/>
+            <Label Text="Pause"
+                   HorizontalOptions="Center"
+                   Grid.Row="5"/>
+            <Label Text="Pause"
+                   HorizontalOptions="Center"
+                   Grid.Row="10"/>
+            <Label Text="Pause"
+                   HorizontalOptions="Center"
+                   Grid.Row="12"/>
+        </Grid>
     <VerticalStackLayout>
 
         <Grid ColumnDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*,*"
@@ -50,6 +96,54 @@
                    HorizontalOptions="Center"
                    Grid.Column="1"
                    Grid.Row="2"/>
+            <Label Text="gerade Woche"
+                   HorizontalOptions="Center"
+                   Grid.Column="2"
+                   Grid.Row="2"/>
+            <Label Text="ungerade Woche"
+                   HorizontalOptions="Center"
+                   Grid.Column="3"
+                   Grid.Row="2"/>
+            <Label Text="gerade Woche"
+                   HorizontalOptions="Center"
+                   Grid.Column="4"
+                   Grid.Row="2"/>
+            <Label Text="ungerade Woche"
+                   HorizontalOptions="Center"
+                   Grid.Column="5"
+                   Grid.Row="2"/>
+            <Label Text="gerade Woche"
+                   HorizontalOptions="Center"
+                   Grid.Column="6"
+                   Grid.Row="2"/>
+            <Label Text="ungerade Woche"
+                   HorizontalOptions="Center"
+                   Grid.Column="7"
+                   Grid.Row="2"/>
+            <Label Text="gerade Woche"
+                   HorizontalOptions="Center"
+                   Grid.Column="8"
+                   Grid.Row="2"/>
+            <Label Text="ungerade Woche"
+                   HorizontalOptions="Center"
+                   Grid.Column="9"
+                   Grid.Row="2"/>
+            <Label Text="gerade Woche"
+                   HorizontalOptions="Center"
+                   Grid.Column="10"
+                   Grid.Row="2"/>
+            <Label Text="ungerade Woche"
+                   HorizontalOptions="Center"
+                   Grid.Column="11"
+                   Grid.Row="2"/>
+            <Label Text="gerade Woche"
+                   HorizontalOptions="Center"
+                   Grid.Column="12"
+                   Grid.Row="2"/>
+            <Label Text="ungerade Woche"
+                   HorizontalOptions="Center"
+                   Grid.Column="13"
+                   Grid.Row="2"/>
         </Grid>
 
 
@@ -75,30 +169,29 @@
                         </Frame.GestureRecognizers>
                         <VerticalStackLayout>
                             <Label Text="{Binding Coursename}"
-                                   HorizontalOptions="Start"
+                                   HorizontalOptions="Center"
                                    Style="{StaticResource SmallLabel}"
                                    HeightRequest="20"/>
                             <Label Text="{Binding Room}"
-                                   HorizontalOptions="Start"
+                                   HorizontalOptions="Center"
                                    Style="{StaticResource SmallLabel}"
                                    HeightRequest="20"/>
-                            <HorizontalStackLayout HeightRequest="20">
-                                <Label HorizontalOptions="Start"
-                                       Style="{StaticResource SmallLabel}"
-                                       Text="{Binding Start}"/>
-                                <Label HorizontalOptions="Start"
-                                       Style="{StaticResource SmallLabel}"
-                                       Text=" - "/>
-                                <Label HorizontalOptions="Start"
-                                       Style="{StaticResource SmallLabel}"
-                                       Text="{Binding End}"/>
-                            </HorizontalStackLayout>
+                            <Label HorizontalOptions="Center"
+                                   Style="{StaticResource SmallLabel}"
+                                   Text="{Binding Start}"/>
+                            <Label HorizontalOptions="Center"
+                                   Style="{StaticResource SmallLabel}"
+                                   Text=" ┃ "/>
+                            <Label HorizontalOptions="Center"
+                                   Style="{StaticResource SmallLabel}"
+                                   Text="{Binding End}"/>
+            
                         </VerticalStackLayout>
                     </Frame>
                 </DataTemplate>
             </BindableLayout.ItemTemplate>
         </Grid>
     </VerticalStackLayout>
-    
+    </HorizontalStackLayout>
 
 </ContentPage>
