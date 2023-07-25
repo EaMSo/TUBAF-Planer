@@ -6,7 +6,53 @@
              x:DataType="viewmodel:PlanBuilderViewModel"
              x:Class="TUBAF_Planer.MainPage"
              Style="{StaticResource BackColor}">
-
+    <HorizontalStackLayout VerticalOptions="Start">
+        <Grid ColumnDefinitions="*"
+              RowDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*,*"
+              HeightRequest="850"
+              WidthRequest="60"
+              AnchorY="0"
+              Style="{StaticResource StackBackColor}">
+            <Label Text="Tage/Zeit"
+                   HorizontalOptions="Center"
+                   Grid.Row="0"/>
+            <Label Text=""
+                   HorizontalOptions="Center"
+                   Grid.Row="1"/>
+            <Label Text="8:00"
+                   HorizontalOptions="Center"
+                   Grid.Row="2"/>
+            <Label Text="9:45"
+                   HorizontalOptions="Center"
+                   Grid.Row="4"/>
+            <Label Text="11:30"
+                   HorizontalOptions="Center"
+                   Grid.Row="6"/>
+            <Label Text="Mittags-pause 13:00"
+                   HorizontalOptions="Center"
+                   Grid.Row="7"/>
+            <Label Text="14:30"
+                   HorizontalOptions="Center"
+                   Grid.Row="9"/>
+            <Label Text="16:15"
+                   HorizontalOptions="Center"
+                   Grid.Row="11"/>
+            <Label Text="18:00"
+                   HorizontalOptions="Center"
+                   Grid.Row="13"/>
+            <Label Text="Pause"
+                   HorizontalOptions="Center"
+                   Grid.Row="3"/>
+            <Label Text="Pause"
+                   HorizontalOptions="Center"
+                   Grid.Row="5"/>
+            <Label Text="Pause"
+                   HorizontalOptions="Center"
+                   Grid.Row="10"/>
+            <Label Text="Pause"
+                   HorizontalOptions="Center"
+                   Grid.Row="12"/>
+        </Grid>
     <VerticalStackLayout>
 
         <Grid ColumnDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*,*"
@@ -146,6 +192,6 @@
             </BindableLayout.ItemTemplate>
         </Grid>
     </VerticalStackLayout>
-    
+    </HorizontalStackLayout>
 
 </ContentPage>
