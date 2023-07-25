@@ -8,22 +8,25 @@
              Style="{StaticResource BackColor}"
              x:Name="page">
     <AbsoluteLayout>
-        <!-- not implemented-->
-        <Entry AbsoluteLayout.LayoutBounds="10, 0, 300, 50"
-               Placeholder="Noch nicht Implementiert">
-            
-        </Entry>
+        
         <Button Text="Module suchen"
-                AbsoluteLayout.LayoutBounds="320,0"
+                AbsoluteLayout.LayoutBounds="10,5,300,50"
                 Style="{StaticResource ButtonS}"
                 Command="{Binding LoadModulesCommand}"
                 IsEnabled="{Binding IsNotBusy}">
             
         </Button>
         <Button Text="Datenbankpfad kopieren"
-                AbsoluteLayout.LayoutBounds="320,670"
+                AbsoluteLayout.LayoutBounds="1615,430"
                 Style="{StaticResource ButtonS}"
                 Command="{Binding DatenbankpfadCommand}">
+
+        </Button>
+        <Button Text="Clear"
+                AbsoluteLayout.LayoutBounds="470,180,400,50"
+                Style="{StaticResource ButtonS}"
+                Command="{Binding ClearCommand}"
+                IsEnabled="{Binding IsNotBusy}">
 
         </Button>
         <StackLayout AbsoluteLayout.LayoutBounds="10, 60, 300, 1500">
@@ -78,7 +81,7 @@
 
             </CollectionView>
         </StackLayout>
-        <HorizontalStackLayout AbsoluteLayout.LayoutBounds="320, 60, 500, 500">
+        <HorizontalStackLayout AbsoluteLayout.LayoutBounds="320, 240, 500, 500">
             <VerticalStackLayout WidthRequest="150"
                                  Padding="15">
                 <Label Text="Modulname:"
@@ -135,7 +138,7 @@
                         </VerticalStackLayout>
                 
         </HorizontalStackLayout>
-        <Button AbsoluteLayout.LayoutBounds="900, 210, 100, 50"
+        <Button AbsoluteLayout.LayoutBounds="1000, 370, 100, 50"
                 Text="Hinzufügen"
                 FontSize="10"   
                 Style="{StaticResource ButtonS}"
@@ -143,7 +146,7 @@
                 IsEnabled="{Binding IsNotBusy}">
 
         </Button>
-        <Button AbsoluteLayout.LayoutBounds="900, 260, 100, 50"
+        <Button AbsoluteLayout.LayoutBounds="1000, 430, 100, 50"
                 Text="Entfernen"
                 FontSize="10"   
                 Style="{StaticResource ButtonS}"
@@ -183,14 +186,14 @@
         </Button>
         <Button Text=" Custom Modul erstellen"
                 Style="{StaticResource ButtonS}"
-                AbsoluteLayout.LayoutBounds="530, 450"
+                AbsoluteLayout.LayoutBounds="470,650,400,50"
                 Command="{Binding CreateCustomModuleCommand}"
                 IsEnabled="{Binding IsNotBusy}">
             
         </Button>
         <Button Text=" Custom Modul löschen"
                 Style="{StaticResource ButtonS}"
-                AbsoluteLayout.LayoutBounds="530, 520"
+                AbsoluteLayout.LayoutBounds="500,720,340,50"
                 Command="{Binding DeleteCustomModuleCommand}"
                 IsEnabled="{Binding IsNotBusy}">
 
