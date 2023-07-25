@@ -8,11 +8,15 @@ Automatisch generierter Modul-Wochenplan für die Technische Universität Bergak
 - wenn es zeitliche Überlappungen bei der Zusammenstellung gibt wird der User gewarnt ✔️
 - Einträge in dem Wochenplan können individualisiert werden ✔️
 - Fertiger Wochenplan kann ~als PDF abgespeichert werden~ mit dem snipping Tool genippt werden oder innerhalb des Programms angekuckt werden ~(oder in einer Kalenderfunktion angesehen werden) --optional~ 🟨
+## MAUI
+- Wir haben uns entschieden, das Projekt mit MAUI umzusetzen, um etwas über UI Design zu lernen
+- Zusätzlich bietet MAUI die Möglichkeit, die Anwendung auf Windows, Mac, Android und IOS zu installieren
 ## Weiteres Vorgehen
 - wärend der Entwicklung des Programms werden auch noch weitere Features realisiert (wenn es sich anbietet) ✔️
 ## Porten?
 - wenn die Software auf einem Computer funktioniert wäre es vorstellbar sie auch auf Android und IOS zu Porten (und eventuell auch auf eine Website) ❌
-
+- bis jetzt wurde das Programm nur auf Windows getestet
+ 
 ## Schwierigkeiten beim Testen
    Wie sich herausgestellt hat ist XUnit nicht instande bestimmte Dinge in einem MAUI Projekt sinnvoll zu Testen siehe [hier](https://learn.microsoft.com/en-us/answers/questions/1190946/cant-use-microsoft-maui-storage-preferences-in-uni).
    Wir haben probiert die Lösung, die dort beschrieben wird und viele andere zu Implementieren, aber es funktionierte nicht. Der Fehler beim Testen kann reproduziert werden, wenn der auskommentierte Code in Unittest1 beim Testen benutzt wird. 
