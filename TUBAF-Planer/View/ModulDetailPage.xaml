@@ -5,25 +5,20 @@
              xmlns:viewmodel="clr-namespace:TUBAFPlaner.ViewModel"
              x:DataType="viewmodel:ModulDetailViewModel"
              Title="{Binding Modul.Coursename}">
-    <VerticalStackLayout WidthRequest="500">
-        <Label 
-            Text="{Binding Modul.Coursename}"/>
-        <Label 
-            Text="{Binding Modul.Type}"/>
-        <Label 
-            Text="{Binding Modul.Weekday}"/>
-        <Label 
-            Text="{Binding Modul.Start}"/>
-        <Label 
-            Text="{Binding Modul.End}"/>
-        <Label 
-            Text="{Binding Modul.Turnus}"/>
-        <Label 
-            Text="{Binding Modul.Room}"/>
-        <Label 
-            Text="{Binding Modul.Lecturer}"/>
-        
-        
-        
-    </VerticalStackLayout>
+
+
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <FlexLayout Direction="Column" JustifyContent="Center">
+            <Label Text="{Binding Modul.Coursename}" HorizontalOptions="Center"/>
+            <Label Text="{Binding Modul.Type}" HorizontalOptions="Center"/>
+            <Label Text="{Binding Modul.Weekday}" HorizontalOptions="Center"/>
+            <Label Text="{Binding Modul.Start}" HorizontalOptions="Center"/>
+            <Label Text="{Binding Modul.End}" HorizontalOptions="Center"/>
+            <Label Text="{Binding Modul.Turnus}" HorizontalOptions="Center"/>
+            <Label Text="{Binding Modul.Room}" HorizontalOptions="Center"/>
+            <Label Text="{Binding Modul.Lecturer}" HorizontalOptions="Center"/>
+        </FlexLayout>
+    </StackLayout>
+
 </ContentPage>
