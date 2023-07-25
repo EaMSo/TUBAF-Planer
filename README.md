@@ -11,6 +11,7 @@ Automatisch generierter Modul-Wochenplan für die Technische Universität Bergak
 ## MAUI
 - Wir haben uns entschieden, das Projekt mit MAUI umzusetzen, um etwas über UI Design zu lernen
 - Zusätzlich bietet MAUI die Möglichkeit, die Anwendung auf Windows, Mac, Android und IOS zu installieren
+- Hinweis: Das Projekt zu kompilieren erfordert(auf Windows) den Entwicklermodus zu aktivieren
 ## Weiteres Vorgehen
 - wärend der Entwicklung des Programms werden auch noch weitere Features realisiert (wenn es sich anbietet) ✔️
 ## Porten?
