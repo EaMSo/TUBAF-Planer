@@ -8,7 +8,9 @@
              Style="{StaticResource BackColor}"
              x:Name="page">
     <AbsoluteLayout>
-        
+        <ActivityIndicator  AbsoluteLayout.LayoutBounds="320, 12"
+                            IsRunning="{Binding IsBusy}"
+                            Color="DarkBlue" />
         <Button Text="Module suchen"
                 AbsoluteLayout.LayoutBounds="10,5,300,50"
                 Style="{StaticResource ButtonS}"
