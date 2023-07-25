@@ -1,0 +1,79 @@
+@startuml
+namespace TUBAF_Planer {
+    class PlanbuilderViewModel {
+             ObservableCollection<Modul> Module
+             ObservableCollection<CustomModule> CustomModules
+             ObservableCollection<Modul> SelectedModules
+             ObservableCollection<Modul> Plan
+        +LoadModules()
+        +DisplayModule()
+        +CreateCustomModule()
+        +DeleteCustomModule()  
+        +AddModuleToSelectedList()
+        +GeneratePlan()
+    }
+
+    namespace Modulmethods {
+        class SQLMethods {
+            +GetDataFromDatabase(): List<Modul>
+        }
+
+        class Modul {
+             ---
+             string coursename
+             string turnus
+             string weekday
+             string lecturer
+             string room
+             string start
+             string end
+             (und deren Properties)
+             ---
+             +Size
+             +DayColumn
+             +TurnusColumnSpan
+             +TimeRowStart
+
+        }
+
+        class FullmoduleList {
+            +GetFullmoduleList(): List<Modul>
+            +GetFullCustomList(): List<Modul>
+        }
+
+        class CustomModule {
+            +CreateCustomModule()
+            +CreateTable()
+            +GetUniquePrimkey()
+            +DeleteModule()
+        }
+
+        class ModuleOverlapping {
+            +AnotherModuleIsAtSameTime(modules: List<Modul>): bool
+        }
+
+        class DBWriting {
+            +GetDBPath()
+        }
+    }
+}
+
+namespace TUBAFTests {
+    class UnitTests << (T,#FF7700) Unit Testing >> {
+        +RunTests()
+    }
+}
+
+TUBAF_Planer.PlanbuilderViewModel -- TUBAF_Planer.Modulmethods.CustomModule : "manipulates data"
+TUBAF_Planer.PlanbuilderViewModel -- TUBAF_Planer.Modulmethods.ModuleOverlapping : "checks overlaps"
+TUBAF_Planer.PlanbuilderViewModel -- TUBAF_Planer.Modulmethods.FullmoduleList : "uses FullmoduleList"
+TUBAF_Planer.Modulmethods.Modul --* TUBAF_Planer.Modulmethods.SQLMethods :uses
+TUBAF_Planer.Modulmethods.FullmoduleList --* TUBAF_Planer.Modulmethods.Modul 
+TUBAF_Planer.Modulmethods.CustomModule --|> TUBAF_Planer.Modulmethods.Modul
+TUBAF_Planer.PlanbuilderViewModel --* TUBAF_Planer.Modulmethods.Modul
+TUBAF_Planer.Modulmethods.FullmoduleList --* TUBAF_Planer.Modulmethods.DBWriting : "interacts with DB"
+TUBAF_Planer.Modulmethods.CustomModule -* TUBAF_Planer.Modulmethods.DBWriting : "interacts with DB"
+
+TUBAF_Planer.Modulmethods -- TUBAFTests.UnitTests : "used for unit testing"
+TUBAF_Planer.PlanbuilderViewModel -- TUBAFTests.UnitTests : "used for unit testing"
+@enduml
